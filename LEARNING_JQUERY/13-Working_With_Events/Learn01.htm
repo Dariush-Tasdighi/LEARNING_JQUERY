@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Binding and Unbinding Events with jQuery
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			alert('Hello, World!');
+
+		});
+
+	</script>
+
+	<style type='text/css'>
+		body {
+			font-size: 10pt;
+		}
+
+		div.normal {
+			margin: 8px;
+			padding: 4px;
+			width: 300px;
+			height: 100px;
+			color: blue;
+			border: thin outset;
+		}
+
+		div.highlighted {
+			color: blue;
+			background-color: yellow;
+		}
+
+		div.hasBeenRead {
+			color: black;
+			border: thin solid;
+			background-color: #cccccc;
+			text-decoration: line-through;
+		}
+	</style>
+</head>
+<body>
+	<h1>
+		Binding Event Example
+	</h1>
+
+	<div id="eventTarget" class="normal">
+	</div>
+</body>
+</html>
+

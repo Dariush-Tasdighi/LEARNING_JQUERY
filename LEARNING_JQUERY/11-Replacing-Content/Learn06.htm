@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Replacing Content
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			alert($('body').html());
+
+			// Solution (1)
+			//$('ul').empty();
+			// /Solution (1)
+
+			// Solution (2)
+			$('ul li').remove();
+			// /Solution (2)
+
+			alert($('body').html());
+
+		});
+
+	</script>
+
+	<style>
+		.a {
+			color: Navy;
+		}
+
+		.b {
+			color: Maroon;
+		}
+	</style>
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">
+			Item 1,1
+		</li>
+		<li class="b">
+			Item 1,2
+		</li>
+	</ul>
+
+	<br />
+
+	<ol id="list2">
+		<li class="a">
+			Item 2,1
+		</li>
+		<li class="b">
+			Item 2,2
+		</li>
+	</ol>
+
+	<br />
+
+	<ul id="list3">
+		<li class="a">
+			Item 3,1
+		</li>
+		<li class="b">
+			Item 3,2
+		</li>
+	</ul>
+</body>
+</html>

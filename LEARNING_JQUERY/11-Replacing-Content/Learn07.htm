@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Replacing Content
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			alert($('body').html());
+
+			$('p#x').empty();
+			$('p#y').remove();
+
+			alert($('body').html());
+
+		});
+
+	</script>
+</head>
+<body>
+	<p id="x">
+		Hello, World!
+	</p>
+
+	<p id="y">
+		Hello, World!
+	</p>
+</body>
+</html>
+

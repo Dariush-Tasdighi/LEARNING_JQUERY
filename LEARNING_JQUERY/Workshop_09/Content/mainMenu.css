@@ -1,0 +1,86 @@
+﻿body {
+}
+
+.ltr {
+	direction: ltr;
+	text-align: left;
+	font-size: 10pt;
+	font-family: Verdana;
+}
+
+.rtl {
+	direction: rtl;
+	text-align: justify;
+	font-size: 10pt;
+	font-family: Tahoma;
+}
+
+div.navigation {
+	height: 50px;
+	background-color: yellow;
+}
+
+div#subMenu {
+	width: 150px;
+	min-height: 0;
+	top: 10px;
+	left: 10px;
+	position: absolute;
+	border: 1px solid white;
+	background-color: #e5e5e5;
+}
+
+div.dynamic {
+	display: block;
+}
+
+	div.dynamic a {
+		margin: 0;
+		border: 1px solid white;
+		padding: 6px 4px 6px 4px;
+		width: 100%;
+		min-height: 20px;
+		color: white;
+		background: #292929;
+		text-decoration: none;
+	}
+
+ul.navigation {
+	background-color: #e5e5e5;
+	/*فارسی*/
+	float: right;
+	/*انگليسی*/
+	/*float: left;*/
+	margin: 0;
+	padding: 0;
+	border: 1px solid white;
+}
+
+	ul.navigation li, ul.navigation li a, div.dynamic a {
+		/*فارسی*/
+		float: right;
+		/*انگليسی*/
+		/*float: left;*/
+	}
+
+	ul.navigation li {
+		list-style: none;
+		position: relative;
+	}
+
+		ul.navigation li a {
+			margin: 0;
+			border: 1px solid white;
+			padding: 6px 4px 6px 4px;
+			width: 100px;
+			height: 20px;
+			position: relative;
+			color: white;
+			background: #292929;
+			text-decoration: none;
+		}
+
+			ul.navigation li a:hover, div.dynamic a:hover {
+				color: black;
+				background: white;
+			}

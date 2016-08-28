@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Manipulating Attributes
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			alert($('body').html());
+
+			// Solution (1)
+			//$('img').attr('alt', 'Spring');
+			//$('img').attr('title', 'Spring');
+			//$('img').attr('src', '../Images/Spring.jpg');
+			// /Solution (1)
+
+			// Solution (2)
+			//$('img')
+			//	.attr('alt', 'Spring')
+			//	.attr('title', 'Spring')
+			//	.attr('src', '../Images/Spring.jpg');
+			// /Solution (2)
+
+			// Solution (3)
+			//$('img').attr({ src: '../Images/Spring.jpg', alt: 'Spring', title: 'Spring' });
+			// /Solution (3)
+
+			// Solution (4)
+			// Note: دستور ذيل يک شیء در جاوا اسکريپت می سازد
+			var varObject =
+				{ src: '../Images/Spring.jpg', alt: 'Spring', title: 'Spring' };
+
+			$('img').attr(varObject);
+			// /Solution (4)
+
+			alert($('body').html());
+
+		});
+
+	</script>
+
+	<style>
+		img {
+			margin: 20px;
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<a href="../Images/Leaf.jpg">
+		<img src="../Images/Leaf.jpg" alt="Leaf" />
+	</a>
+
+	<br />
+
+	<a href="../Images/Grass.jpg">
+		<img src="../Images/Grass.jpg" alt="Grass" />
+	</a>
+</body>
+</html>

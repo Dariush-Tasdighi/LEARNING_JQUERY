@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Event Helper Functions
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(function () {
+
+			// Solution (1)
+			//$('div#eventTarget').on('mouseenter mouseleave', toggleHighlight);
+			// /Solution (1)
+
+			// Solution (2)
+			$('div#eventTarget').hover(toggleHighlight, toggleHighlight);
+			// /Solution (2)
+
+		});
+
+		function toggleHighlight(e) {
+
+			$(this).toggleClass('highlighted');
+
+		}
+
+	</script>
+
+	<style type='text/css'>
+		body {
+			font-size: 12pt;
+		}
+
+		div.normal {
+			width: 300px;
+			height: 200px;
+			color: Black;
+			background-color: #CCCCCC;
+		}
+
+		div.highlighted {
+			color: Blue;
+			background-color: Yellow;
+		}
+	</style>
+</head>
+<body>
+	<h1>
+		Event Helper Functions
+	</h1>
+
+	<div id="eventTarget" class="normal">
+		Mouse over this div to see the effect.
+	</div>
+</body>
+</html>
+

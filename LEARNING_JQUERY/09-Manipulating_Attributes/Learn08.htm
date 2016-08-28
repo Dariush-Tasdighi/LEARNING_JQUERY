@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Manipulating Attributes
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			$("div#data a").attr("target", "_blank");
+
+			// Solution(1)
+			//alert($("div#data").html());
+			// /Solution(1)
+
+			// Solution(2)
+			$("textarea#txtDebug").val($("div#data").html());
+			// /Solution(2)
+
+		});
+
+	</script>
+
+	<style>
+		img {
+			width: 50px;
+			margin: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="data">
+		<a href="../Images/Grass.jpg">
+			<img src="../Images/Grass.jpg" alt="Grass" />
+		</a>
+
+		<br />
+
+		<a href="../Images/Grass.jpg" target="_self">
+			<img src="../Images/Grass.jpg" alt="Grass" />
+		</a>
+
+		<br />
+
+		<a href="../Images/Grass.jpg" target="_blank">
+			<img src="../Images/Grass.jpg" alt="Grass" />
+		</a>
+	</div>
+
+	<br />
+	<textarea id="txtDebug" rows="10" cols="100"></textarea>
+</body>
+</html>

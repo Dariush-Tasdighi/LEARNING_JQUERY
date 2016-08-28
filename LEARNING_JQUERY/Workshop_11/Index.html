@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+
+	<script src="../Scripts/jquery-2.1.1.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			$("button#btn").click(function (e) {
+
+				//alert("Hello");
+
+				$("table#tblInbox input[type='checkbox']").attr("checked", "checked");
+
+			});
+
+		});
+
+	</script>
+</head>
+<body>
+	<button id="btn">Select All</button>
+
+	<br />
+	<br />
+
+	<table id="tblInbox">
+		<tr>
+			<td>
+				<input type="checkbox" id="chk1" name="chk1" />
+			</td>
+			<td>
+				Item 1
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" id="chk2" name="chk2" />
+			</td>
+			<td>
+				Item 2
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" id="chk3" name="chk3" />
+			</td>
+			<td>
+				Item 3
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" id="chk4" name="chk4" />
+			</td>
+			<td>
+				Item 4
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" id="chk5" name="chk5" />
+			</td>
+			<td>
+				Item 5
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

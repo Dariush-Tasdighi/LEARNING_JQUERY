@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			Learning Filters
+		</title>
+
+		<script src="Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+		<script>
+			$(document).ready(function () {
+				// Solution (1)
+				//$("table.data tr:odd").css("background-color", "#CCCCCC");
+				//$("table.data tr:even").css("background-color", "#FFFF99");
+				// /Solution (1)
+
+				// Solution (2)
+				//$("table.data tr:nth-child(odd)").css("background-color", "#CCCCCC");
+				//$("table.data tr:nth-child(even)").css("background-color", "#FFFF99");
+				// /Solution (2)
+
+				// Solution (3)
+				$("table.data tr:nth-child(1)")
+					.css("color", "#FFFFFF")
+					.css("background-color", "#000000");
+
+				$("table.data tr:not(table.data tr:nth-child(1)):nth-child(odd)").css("background-color", "#CCCCCC");
+				$("table.data tr:not(table.data tr:nth-child(1)):nth-child(even)").css("background-color", "#FFFF99");
+				// /Solution (3)
+			})
+		</script>
+	</head>
+	<body>
+		<table class="data">
+			<tr>
+				<th>
+					Full Name
+				</th>
+				<th>
+					Phone #
+				</th>
+			</tr>
+
+			<tr>
+				<td>
+					Full Name 1
+				</td>
+				<td>
+					Phone 1
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Full Name 2
+				</td>
+				<td>
+					Phone 2
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Full Name 3
+				</td>
+				<td>
+					Phone 3
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Full Name 4
+				</td>
+				<td>
+					Phone 4
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Full Name 5
+				</td>
+				<td>
+					Phone 5
+				</td>
+			</tr>
+		</table>
+
+		<table>
+			<tr>
+				<th>
+					Full Name
+				</th>
+				<th>
+					Phone #
+				</th>
+			</tr>
+
+			<tr>
+				<td>
+					Full Name 1
+				</td>
+				<td>
+					Phone 1
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Full Name 2
+				</td>
+				<td>
+					Phone 2
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Full Name 3
+				</td>
+				<td>
+					Phone 3
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Full Name 4
+				</td>
+				<td>
+					Phone 4
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Full Name 5
+				</td>
+				<td>
+					Phone 5
+				</td>
+			</tr>
+		</table>
+
+		<table class="data">
+			<tr>
+				<th>
+					Full Name
+				</th>
+				<th>
+					Phone #
+				</th>
+			</tr>
+
+			<tr>
+				<td>
+					Full Name 1
+				</td>
+				<td>
+					Phone 1
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Full Name 2
+				</td>
+				<td>
+					Phone 2
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Full Name 3
+				</td>
+				<td>
+					Phone 3
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Full Name 4
+				</td>
+				<td>
+					Phone 4
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Full Name 5
+				</td>
+				<td>
+					Phone 5
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

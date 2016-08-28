@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Learning Filters
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			$(':contains(2)').css('border', '1px solid red');
+
+			// Note: Equivalent Below
+			//$('*:contains(2)').css('border', '1px solid red');
+
+		});
+
+	</script>
+
+	<style>
+		body, ul, li, p, a {
+			margin: 10px;
+		}
+
+		.a {
+			color: Navy;
+		}
+
+		.b {
+			color: Maroon;
+		}
+	</style>
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">
+			Item 1
+		</li>
+		<li class="b">
+			Item 2
+		</li>
+	</ul>
+
+	<p class="a">
+		This is paragraph 1
+	</p>
+
+	<p id="para2">
+		This is paragraph 2
+	</p>
+
+	<p>
+		<a href="http://www.Yahoo.com">This is paragraph 3 - (2)</a>
+	</p>
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			jQuery Element Fading
+		</title>
+
+		<script src="../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+		<script>
+
+			$(function () {
+				$("#fadeIn").click(function () {
+					$("div#theDiv").fadeTo(5000, 1.0, function () {
+						alert("Fading In Completed!");
+					});
+				});
+
+				$("#fadeOut").click(function () {
+					$("div#theDiv").fadeTo(5000, 0.3, function () {
+						alert("Fading Out Completed!");
+					});
+				});
+			});
+
+		</script>
+
+		<style>
+			body {
+				background-attachment: fixed;
+				background-image: url(../Images/Back.gif);
+			}
+
+			div#theDiv {
+				width: 250px;
+				height: 180px;
+				cursor: pointer;
+				background: blue;
+				margin: 10px;
+				padding: 20px;
+				border: 2px solid black;
+			}
+
+			p, span {
+				font-size: 16pt;
+			}
+
+			button {
+				margin: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			Fading an Element
+		</p>
+
+		<button id="fadeOut">
+			Fade Out
+		</button>
+
+		<button id="fadeIn">
+			Fade In
+		</button>
+
+		<div id="theDiv">
+		</div>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			Creating Simple Tooltip That Works With All JQuery Versions!
+		</title>
+
+		<script src="../Scripts/jquery-2.1.1.min.js"></script>
+
+		<script>
+
+			$(function () {
+
+				var oToolTip =
+					$("<div id='myToolTip'>");
+
+				oToolTip.hide();
+
+				$("body").append(oToolTip);
+
+				$("a[title]").each(function () {
+
+					var strTitle = $(this).attr("title");
+					$(this).removeAttr("title");
+					$(this).attr("data-tooltip", strTitle);
+
+				});
+
+				$("a[data-tooltip]").each(function () {
+
+					$(this).mouseenter(function (e) {
+
+						// **************************************************
+						var varWidth = $(this).width();
+						var varHeight = $(this).height();
+
+						var varTop = $(this).offset().top;
+						var varLeft = $(this).offset().left;
+
+						var varWidthOfToolTip = oToolTip.width();
+
+						var varDifference = 0;
+						var varLeftOfToolTip = 0;
+
+						varDifference = varWidth - varWidthOfToolTip;
+
+						varLeftOfToolTip = varLeft + (varDifference / 2);
+
+						var varTopOfToolTip = varTop + varHeight + 2;
+						// **************************************************
+
+						var strTitle =
+							$(this).attr("data-tooltip");
+
+						oToolTip.html(strTitle);
+						oToolTip.css("left", varLeftOfToolTip).css("top", varTopOfToolTip);
+
+						oToolTip.hide();
+						oToolTip.fadeIn(400);
+
+					});
+
+					$(this).mouseout(function (e) {
+
+						oToolTip.fadeOut(200);
+
+					});
+
+				});
+
+			});
+
+		</script>
+
+		<style>
+
+			div#myToolTip {
+				top: 0px;
+				left: 0px;
+				position: absolute;
+
+				width: 200px;
+				min-height: 30px;
+
+				margin: 0px;
+				padding: 4px;
+				border-width: 2px;
+				border-style: outset;
+				border-color: #CCCCCC #808080 #808080 #CCCCCC;
+
+				color: Blue;
+				background-color: #CCCCFF;
+
+				font-size: 8pt;
+				font-family: Verdana;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div style="text-align: center">
+			<a href="../Default.aspx" title="Please check my site at www.IranianExpets.com">
+				Anchor With Title
+			</a>
+
+			<br />
+			<br />
+
+			<a href="../Default.aspx">
+				Anchor Without Title
+			</a>
+
+			<br />
+			<br />
+
+			<a href="../Default.aspx" title="My name is Mr. Dariush Tasdighi. Please check my site at www.IranianExpets.com">
+				Anchor With Title
+			</a>
+
+			<br />
+			<br />
+
+			<a href="../Default.aspx">
+				Anchor Without Title
+			</a>
+		</div>
+	</body>
+</html>

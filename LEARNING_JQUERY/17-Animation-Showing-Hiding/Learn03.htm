@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			jQuery Showing and Hiding an Element
+		</title>
+
+		<script src="../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+		<script>
+
+			$(function () {
+				$("#show").click(function () {
+					$("div#theDiv").show(10000, function () {
+						alert("Showing Done!");
+					});
+				});
+
+				$("#hide").click(function () {
+					$("div#theDiv").hide(10000, function () {
+						alert("Hiding Done!");
+					});
+				});
+			});
+
+		</script>
+
+		<style>
+			div#theDiv {
+				width: 200px;
+				height: 200px;
+				cursor: pointer;
+				background: blue;
+				margin: 10px;
+				padding: 20px;
+				border: 2px solid black;
+			}
+
+			p, span {
+				font-size: 16pt;
+			}
+
+			button {
+				margin: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			Showing and Hiding an Element
+		</p>
+
+		<button id="show">
+			Show
+		</button>
+
+		<button id="hide">
+			Hide
+		</button>
+
+		<div id="theDiv">
+		</div>
+	</body>
+</html>

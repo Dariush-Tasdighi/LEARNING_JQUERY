@@ -1,0 +1,147 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			Practical Example
+		</title>
+
+		<script src="../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+		<script>
+
+			$(function () {
+
+				var oToolTip =
+					$("<div id='myToolTip' class='invisible'>");
+
+				$("body").append(oToolTip);
+
+				$("a[title]").each(function () {
+
+					var strTitle = $(this).attr("title");
+					$(this).removeAttr("title");
+					$(this).attr("data-tooltip", strTitle);
+
+				});
+
+				$("a[data-tooltip]").each(function () {
+
+					$(this).mouseenter(function (e) {
+
+						// **************************************************
+						var varWidth = $(this).width();
+						var varHeight = $(this).height();
+
+						var varTop = $(this).offset().top;
+						var varLeft = $(this).offset().left;
+
+						var varWidthOfToolTip = oToolTip.width();
+
+						var varDifference = 0;
+						var varLeftOfToolTip = 0;
+
+						//if (varWidth >= varWidthOfToolTip) {
+						//	varDifference = varWidth - varWidthOfToolTip;
+
+						//	varLeftOfToolTip = varLeft + (varDifference / 2);
+						//}
+						//else {
+						//	varDifference = varWidthOfToolTip - varWidth;
+
+						//	varLeftOfToolTip = varLeft - (varDifference / 2);
+						//}
+
+						varDifference = varWidth - varWidthOfToolTip;
+
+						varLeftOfToolTip = varLeft + (varDifference / 2);
+
+						var varTopOfToolTip = varTop + varHeight + 2;
+						// **************************************************
+
+						var strTitle =
+							$(this).attr("data-tooltip");
+
+						$(oToolTip).html(strTitle);
+						$(oToolTip).css("left", varLeftOfToolTip).css("top", varTopOfToolTip);
+
+						$(oToolTip).toggleClass("invisible");
+
+					});
+
+					$(this).mouseout(function (e) {
+
+						$(oToolTip).toggleClass("invisible");
+
+					});
+
+				});
+
+			});
+
+		</script>
+
+		<style>
+			div#myToolTip {
+				top: 0px;
+				left: 0px;
+				position: absolute;
+
+				margin: 0px;
+				padding: 5px;
+
+				width: 200px;
+				min-height: 30px;
+
+				color: Black;
+				border: 1px outset Gray;
+				background-color: #CCCCCC;
+			}
+
+			.invisible {
+				display: none;
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<p>
+				<a href="../Default.aspx" title="Click on me for going Home (One)">
+					Home with title!
+				</a>
+			</p>
+
+			<p>
+				<a href="../Default.aspx">
+					Home
+				</a>
+			</p>
+
+			<p>
+				<a href="../Default.aspx" title="Click on me for going Home (Two), Click on me for going Home (Two), Click on me for going Home (Two)">
+					Home with title!
+				</a>
+			</p>
+
+			<p>
+				<a href="../Default.aspx">
+					Home
+				</a>
+			</p>
+
+			<p>
+				<a href="../Default.aspx" title="Click on me for going Home (Three)">
+					Home with title!
+				</a>
+			</p>
+
+			<p>
+				<a href="../Default.aspx" title="Click on me for going Home (For)">
+					Home with title!
+					Home with title! Home with title!
+				</a>
+			</p>
+		</center>
+	</body>
+</html>

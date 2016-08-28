@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			jQuery Image Rotator
+		</title>
+
+		<script src="../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+		<script>
+
+			$(function () {
+				// Create the image rotator
+				setInterval("rotateImages()", 3000);
+			});
+
+			function rotateImages() {
+				var oCurPhoto = $('div#slideShow div.current');
+
+				var oNxtPhoto = oCurPhoto.next();
+
+				// اگر المنت بعدی را پيدا نکرد
+				if (oNxtPhoto.length == 0) {
+					// در اين حالت، المنت بعدی، می شود اولين المنت مجموعه ديوها
+					oNxtPhoto = $('#slideShow div:first');
+				}
+
+				oCurPhoto.removeClass('current').addClass('previous');
+				oNxtPhoto.css({ opacity: 0.0 }).addClass('current').animate({ opacity: 1.0 }, 2000, function () {
+					oCurPhoto.removeClass('previous');
+				});
+			}
+
+		</script>
+
+		<style>
+			div#slideShow {
+				width: 400px;
+				height: 400px;
+			}
+
+			#slideShow div {
+				z-index: 0;
+				position: absolute;
+			}
+
+				#slideShow div.previous {
+					z-index: 1;
+				}
+
+				#slideShow div.current {
+					z-index: 2;
+				}
+		</style>
+	</head>
+	<body>
+		<h1>
+			jQuery-based Image Rotator
+		</h1>
+
+		<div id="slideShow">
+			<div class="current">
+				<img src="../Images/Grass.jpg" alt="Photo Gallery" width="400" height="400" class="gallery" />
+			</div>
+
+			<div>
+				<img src="../Images/Leaf.jpg" alt="Photo Gallery" width="400" height="400" class="gallery" />
+			</div>
+
+			<div>
+				<img src="../Images/Spring.jpg" alt="Photo Gallery" width="400" height="400" class="gallery" />
+			</div>
+
+			<div>
+				<img src="../Images/Water.jpg" alt="Photo Gallery" width="400" height="400" class="gallery" />
+			</div>
+		</div>
+	</body>
+</html>

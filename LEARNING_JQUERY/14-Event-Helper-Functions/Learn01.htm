@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Event Helper Functions
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(function () {
+
+			$('div#eventTarget').on('click', someFunction);
+
+		});
+
+		function someFunction(e) {
+
+			alert('Hello, World!');
+
+		}
+
+	</script>
+
+	<style type='text/css'>
+		body {
+			font-size: 12pt;
+		}
+
+		div.normal {
+			width: 300px;
+			height: 200px;
+			color: Black;
+			background-color: #CCCCCC;
+		}
+	</style>
+</head>
+<body>
+	<h1>
+		Event Helper Functions
+	</h1>
+
+	<div id="eventTarget" class="normal">
+		Click On Me!
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>
+		Learning Filters
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			$('p[lang$=us]').css('border', '1px solid red');
+
+		});
+
+	</script>
+
+	<style>
+		.a {
+			color: Navy;
+		}
+
+		.b {
+			color: Maroon;
+		}
+	</style>
+</head>
+<body>
+	<p class="a">
+		This is paragraph 1
+	</p>
+
+	<p id="para1">
+		This is paragraph 2
+	</p>
+
+	<p class="b" lang="us">
+		This is paragraph 3
+	</p>
+
+	<p id="para2" lang="en-us">
+		This is paragraph 4
+	</p>
+
+	<p id="para3" lang="us-en">
+		This is paragraph 5
+	</p>
+
+	<p id="para4" lang="en-us-ab">
+		This is paragraph 6
+	</p>
+</body>
+</html>
+

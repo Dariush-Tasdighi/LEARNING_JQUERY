@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Inserting Content
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			alert($('body').html());
+
+			$('a[href$=".pdf"]').after('<img src="../Images/PDF.gif" alt="PDF File" />');
+
+			alert($('body').html());
+
+		});
+
+	</script>
+
+	<style>
+		li {
+			margin: 5pt 0 0 5pt;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>
+			<a href="someurl.html">Link #1</a>
+		</li>
+		<li>
+			<a name="#anchor1">Named Anchor Link</a>
+		</li>
+		<li>
+			<a href="someurl.html">Link #2</a>
+		</li>
+		<li>
+			<a href="someurl.pdf">Link #3</a>
+		</li>
+		<li>
+			<a href="someurl.html">Link #4</a>
+		</li>
+		<li>
+			<a href="someurl.html">Link #5</a>
+		</li>
+		<li>
+			<a href="someurl.pdf">Link #6</a>
+		</li>
+		<li>
+			<a href="someurl.html">Link #7</a>
+		</li>
+		<li>
+			<a href="mailto:joe@joe.com">Email Link</a>
+		</li>
+	</ul>
+</body>
+</html>
+0

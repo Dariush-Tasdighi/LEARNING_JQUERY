@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Event-Object
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(function () {
+
+			$('*.normal').click(function (e) {
+
+				$(this).html('pageX: ' + e.pageX +
+							', pageY: ' + e.pageY +
+							', type: ' + e.type +
+							', target: ' + e.target);
+
+			});
+
+		});
+
+	</script>
+
+	<style type='text/css'>
+		*.normal {
+			width: 400px;
+			height: 100px;
+			margin: 10px;
+			padding: 10px;
+			font-size: 18pt;
+			color: Black;
+			background-color: #CCCCCC;
+		}
+	</style>
+</head>
+<body>
+	<div class="normal">
+		Click On Me!
+	</div>
+
+	<p class="normal">
+		Click On Me!
+	</p>
+
+	<div class="normal">
+		Click On Me!
+	</div>
+
+	<p class="normal">
+		Click On Me!
+	</p>
+</body>
+</html>
+

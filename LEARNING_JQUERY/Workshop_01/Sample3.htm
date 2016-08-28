@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+
+	<script src="../../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			$('div.make-responsive img').addClass('img-responsive');
+
+			$('div.make-responsive table')
+				.addClass('table')
+				.addClass('table-hover')
+				.addClass('table-striped')
+				.addClass('table-bordered')
+				.addClass('table-condensed')
+				.wrap('<div class="row"></div>')
+				.wrap('<div class="col-sm-12 table-responsive"></div>')
+				;
+
+		});
+
+	</script>
+</head>
+<body>
+	<div class="make-responsive">
+		<img src="../../Images/Leaf.jpg" alt="Leaf" />
+		<br />
+		<img src="../../Images/Leaf.jpg" alt="Leaf" />
+		<br />
+		<table>
+			<tr>
+				<td>
+					First Name
+				</td>
+				<td>
+					Last Name
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Dariush
+				</td>
+				<td>
+					Tasdighi
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

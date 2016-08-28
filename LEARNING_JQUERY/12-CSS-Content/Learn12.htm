@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		CSS Content
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			$('#width').html($('#theDiv').width());
+			$('#innerW').html($('#theDiv').innerWidth());
+			$('#outerW').html($('#theDiv').outerWidth());
+			$('#outerWM').html($('#theDiv').outerWidth(true));
+
+			$('#height').html($('#theDiv').height());
+			$('#innerH').html($('#theDiv').innerHeight());
+			$('#outerH').html($('#theDiv').outerHeight());
+			$('#outerHM').html($('#theDiv').outerHeight(true));
+
+			$('#offset').html($('#theDiv').offset().top + ', ' + $('#theDiv').offset().left);
+			$('#position').html($('#theDiv').position().top + ', ' + $('#theDiv').position().left);
+
+		});
+
+	</script>
+
+	<style>
+		div#theDiv {
+			width: 250px;
+			height: 180px;
+			background: blue;
+			margin: 15px;
+			padding: 20px;
+			border: 2px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div id="theDiv">
+	</div>
+
+	<div>
+		<span>Width:</span> <span id="width"></span>
+	</div>
+
+	<div>
+		<span>innerWidth (Width + Left Padding + Right Padding):</span>
+		<span id="innerW"></span>
+	</div>
+
+	<div>
+		<span>outerWidth (Width + Left Padding + Right Padding + Left Border + Right Border):</span>
+		<span id="outerW"></span>
+	</div>
+
+	<div>
+		<span>
+			outerWidth (true) (Width + Left Padding + Right Padding + Left Border + Right
+			Border + left Margin + Right Margin):
+		</span> <span id="outerWM"></span>
+	</div>
+
+	<br />
+
+	<div>
+		<span>Height:</span> <span id="height"></span>
+	</div>
+
+	<div>
+		<span>innerHeight:</span> <span id="innerH"></span>
+	</div>
+
+	<div>
+		<span>outerHeight:</span> <span id="outerH"></span>
+	</div>
+
+	<div>
+		<span>outerHeight + Margin:</span> <span id="outerHM"></span>
+	</div>
+
+	<br />
+
+	<div>
+		<span>offset:</span> <span id="offset"></span>
+	</div>
+
+	<div>
+		<span>position:</span> <span id="position"></span>
+	</div>
+</body>
+</html>

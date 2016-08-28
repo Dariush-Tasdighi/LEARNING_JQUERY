@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		CSS Content
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			// Get: اولين
+			alert($('h3').css('color'));
+
+			// Get: اولين
+			alert($('p').css('color'));
+
+			alert($('p:last').css('color'));
+
+			alert($('p:first').css('color'));
+
+		});
+
+	</script>
+
+	<style>
+		.red {
+			color: Red;
+		}
+
+		.green {
+			color: Green;
+		}
+
+		.blue {
+			color: Blue;
+		}
+	</style>
+</head>
+<body>
+	<h3>
+		This is header!
+	</h3>
+
+	<p class="red">
+		This is paragraph 1
+	</p>
+
+	<p class="blue">
+		This is paragraph 2
+	</p>
+
+	<p class="green">
+		This is paragraph 3
+	</p>
+
+	<div class="blue">
+		<p>
+			This is paragraph 4
+		</p>
+	</div>
+</body>
+</html>

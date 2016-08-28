@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+	<script src="Scripts/jquery.maskedinput.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			$.mask.definitions['x'] = '[12]';
+
+			$("input.date").mask("9999/99/99");
+			$("input.mobile").mask("(999) 999-9999");
+			$("input.test").mask("x999999999");
+
+		});
+
+	</script>
+
+	<style>
+		body {
+			background-color: #CCCCCC;
+		}
+
+		input.textBox {
+			padding: 4px;
+		}
+	</style>
+</head>
+<body>
+	<br />
+	<input type="text" id="txt1" class="textBox date" />
+
+	<br />
+	<input type="text" id="txt2" class="textBox mobile" />
+
+	<br />
+	<input type="text" id="txt3" class="textBox test" />
+</body>
+</html>
+

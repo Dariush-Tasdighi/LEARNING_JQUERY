@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Event Helper Functions
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(function () {
+
+			$('div').click(function (e) {
+
+				alert('Done!');
+
+				$(this).css({ background: 'lightgray', cursor: 'auto' });
+
+			});
+
+		});
+
+	</script>
+
+	<style>
+		body {
+			font-size: 12pt;
+		}
+
+		div {
+			width: 60px;
+			height: 60px;
+			float: left;
+			margin: 10px;
+			cursor: pointer;
+			background: blue;
+			border: 2px solid black;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		Click on each square to change color!
+	</p>
+
+	<div>
+	</div>
+
+	<div>
+	</div>
+
+	<div>
+	</div>
+
+	<div>
+	</div>
+
+	<div>
+	</div>
+</body>
+</html>
+

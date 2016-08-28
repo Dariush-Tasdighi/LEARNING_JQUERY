@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>
+		Learning Selectors
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			alert('Pause!');
+
+			$('.a.b').css('border', '1px solid red');
+
+			//$('.a,.b').css('border', '1px solid red');
+
+			//$('.a .b').css('border', '1px solid red');
+
+		});
+
+	</script>
+
+	<style>
+		.a {
+			font-size: 10pt;
+			color: Red;
+		}
+
+		.b {
+			font-size: 20pt;
+			background-color: Yellow;
+		}
+	</style>
+</head>
+<body>
+	<p class="a">
+		This is paragraph 1
+	</p>
+
+	<p class="b">
+		This is paragraph 2
+	</p>
+
+	<p class="a b">
+		This is paragraph 3
+	</p>
+
+	<p class="b a">
+		This is paragraph 4
+	</p>
+
+	<div class="b">
+		<p class="a">
+			This is paragraph 5
+		</p>
+	</div>
+
+	<div class="a">
+		<p class="b">
+			This is paragraph 6
+		</p>
+	</div>
+</body>
+</html>
+

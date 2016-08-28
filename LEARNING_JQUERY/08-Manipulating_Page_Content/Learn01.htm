@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Manipulating Page Content
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			// html() => GET, Inner Html
+			alert($('ul#list1').html());
+
+		});
+
+	</script>
+
+	<style>
+		.a {
+			color: Navy;
+		}
+
+		.b {
+			color: Maroon;
+		}
+	</style>
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">
+			Item 1
+		</li>
+		<li class="b">
+			Item 2
+		</li>
+		<li class="a">
+			Item 3
+		</li>
+		<li class="b">
+			Item 4
+		</li>
+	</ul>
+</body>
+</html>

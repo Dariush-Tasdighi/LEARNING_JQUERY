@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+		</title>
+
+		<script src="Scripts/jquery-1.8.3.js" type="text/javascript"></script>
+		<script src="Scripts/xdate.js" type="text/javascript"></script>
+
+		<script>
+			var day;
+			var varTopBar;
+
+			$(document).ready(function () {
+				day = new XDate(0, 0, 0, 0, 0, 5, 0);
+
+				varTopBar = $("<div id='topBar'>");
+
+				$(varTopBar).hide();
+
+				$(varTopBar).css("top", "0px");
+				$(varTopBar).css("margin", "10");
+				$(varTopBar).css("padding", "10");
+				$(varTopBar).css("position", "absolute");
+
+				$(varTopBar).css("font-size", "20pt");
+				$(varTopBar).css("font-weight", "bold");
+				$(varTopBar).css("font-family", "Verdana");
+
+				$(varTopBar).css("color", "White");
+				$(varTopBar).css("background-color", "black");
+
+				$(varTopBar).html(day.toString("HH:mm:ss"));
+
+				$(varTopBar).fadeIn(2000);
+
+				$("body").prepend($(varTopBar));
+
+				setInterval(DisplayTime, 1000);
+			});
+
+			$(window).scroll(function () {
+				$(varTopBar).css("top", $(window).scrollTop() + "px");
+			});
+
+			function DisplayTime()
+			{
+				$(varTopBar).html(day.toString("HH:mm:ss"));
+
+				if (day.toString("HH:mm:ss") == "00:00:00") {
+					$("#frmMain").submit();
+				}
+
+				day.addSeconds(-1);
+			}
+		</script>
+	</head>
+	<body>
+		<form id="frmMain" action="Done.htm" method="get">
+			Full Name
+			<br />
+			<input type="text" id="txtFullName" />
+			<br />
+			<br />
+			<input type="submit" id="btnSubmit" value="(S)ubmit" accesskey="S" />
+		</form>
+
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+		Hello, World!
+		<br />
+	</body>
+</html>

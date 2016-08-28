@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+	<script src="Scripts/jquery.corner.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			//$('div').corner();
+
+			//$('div').corner('30px');
+
+			$('div.myClass').corner('30px');
+
+			//$('.myClass').corner('10px');
+
+		});
+
+	</script>
+
+	<style>
+		body {
+			font-size: 8pt;
+			font-family: Verdana;
+			background-color: #CCCCCC;
+		}
+
+		div {
+			margin: 10px;
+			padding: 10px;
+			width: 120px;
+			height: 60px;
+			color: Blue;
+			background-color: Yellow;
+		}
+
+			div.myClass {
+				color: Black;
+				font-weight: bold;
+			}
+
+		input.textBox {
+			padding: 4px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		Hello, World!
+	</div>
+
+	<div class="myClass">
+		Hello, World!
+	</div>
+
+	<div>
+		Hello, World!
+	</div>
+
+	<div class="myClass">
+		Hello, World!
+	</div>
+
+	<div>
+		Hello, World!
+	</div>
+
+	<div class="myClass">
+		Hello, World!
+	</div>
+
+	<input type="text" class="textBox" />
+
+	<br />
+	<br />
+
+	<input type="text" class="textBox myClass" />
+
+	<br />
+	<br />
+</body>
+</html>

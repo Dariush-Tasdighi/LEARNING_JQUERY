@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Learning Filters
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			$('p:contains(3)').css('border', '1px solid red');
+
+			//$('p:contains("3")').css('border', '1px solid red');
+
+			// Note: The function signature value is Case Sensitive!
+			//$('p:contains('hello')').css('border', '1px solid red');
+
+			//$('p:contains("Hello")').css('border', '1px solid red');
+
+			//$('p:contains(Hello)').css('border', '1px solid red');
+
+			//$('p:contains("Hello, World")').css('border', '1px solid red');
+
+			//$('p:contains(Hello, World)').css('border', '1px solid red');
+
+		});
+
+	</script>
+
+	<style>
+		.a {
+			color: Navy;
+		}
+
+		.b {
+			color: Maroon;
+		}
+	</style>
+</head>
+<body>
+	<p class="a">
+		This is paragraph 1
+	</p>
+
+	<p class="b">
+		This is paragraph 2
+	</p>
+
+	<p class="a">
+		This is paragraph 3
+	</p>
+
+	<p class="b">
+		This is paragraph 4
+	</p>
+
+	<p>
+		Hello, World!
+		<br />
+		<a href="http://www.Yahoo.com">This is paragraph 5 - (3)</a>
+		<br />
+		Hello, World!
+	</p>
+
+	<p>
+		Hello, World!
+		<br />
+		<a id="a3" href="http://www.Yahoo.com">This is paragraph 6</a>
+		<br />
+		Hello, World!
+	</p>
+</body>
+</html>

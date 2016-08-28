@@ -1,0 +1,26 @@
+﻿body
+{
+}
+
+.odd
+{
+	background-color: #99CCFF;
+}
+
+.even
+{
+	background-color: #FFFF99;
+}
+
+.highlighted
+{
+	background-color: Orange;
+}
+
+.hasBeenRead
+{
+	color: #808080;
+	background-color: #C0C0C0;
+
+	text-decoration: line-through;
+}

@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			jQuery Element Fading
+		</title>
+
+		<script src="../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+		<script>
+
+			$(function () {
+				$("#fadein1").click(function () {
+					$("div#theDiv").fadeIn("slow");
+				});
+
+				$("#fadein2").click(function () {
+					$("div#theDiv").fadeIn("normal");
+				});
+
+				$("#fadein3").click(function () {
+					$("div#theDiv").fadeIn("fast");
+				});
+
+				$("#fadein4").click(function () {
+					$("div#theDiv").fadeIn(10000);
+				});
+
+				$("#fadeout1").click(function () {
+					$("div#theDiv").fadeOut("slow");
+				});
+
+				$("#fadeout2").click(function () {
+					$("div#theDiv").fadeOut("normal");
+				});
+
+				$("#fadeout3").click(function () {
+					$("div#theDiv").fadeOut("fast");
+				});
+
+				$("#fadeout4").click(function () {
+					$("div#theDiv").fadeOut(10000);
+				});
+
+				$("#fadeto1").click(function () {
+					$("div#theDiv").fadeTo("slow", 0.3);
+				});
+
+				$("#fadeto2").click(function () {
+					$("div#theDiv").fadeTo("normal", 0.3);
+				});
+
+				$("#fadeto3").click(function () {
+					$("div#theDiv").fadeTo("fast", 1.0);
+				});
+
+				$("#fadeto4").click(function () {
+					$("div#theDiv").fadeTo(10000, 1.0);
+				});
+			});
+
+		</script>
+
+		<style>
+			body {
+				background-attachment: fixed;
+				background-image: url(../Images/Back.gif);
+			}
+
+			div#theDiv {
+				width: 200px;
+				height: 200px;
+				cursor: pointer;
+				background: blue;
+				margin: 10px;
+				padding: 20px;
+				border: 2px solid black;
+			}
+
+			p, span {
+				font-size: 16pt;
+			}
+
+			button {
+				margin: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			Fading an Element
+		</p>
+
+		<button id="fadein1">
+			Fade In
+		</button>
+
+		<button id="fadein2">
+			Fade In
+		</button>
+
+		<button id="fadein3">
+			Fade In
+		</button>
+
+		<button id="fadein4">
+			Fade In
+		</button>
+
+		<br />
+
+		<button id="fadeout1">
+			Fade Out
+		</button>
+
+		<button id="fadeout2">
+			Fade Out
+		</button>
+
+		<button id="fadeout3">
+			Fade Out
+		</button>
+
+		<button id="fadeout4">
+			Fade Out
+		</button>
+
+		<br />
+
+		<button id="fadeto1">
+			Fade To 0.3
+		</button>
+
+		<button id="fadeto2">
+			Fade To 0.3
+		</button>
+
+		<button id="fadeto3">
+			Fade To 1.0
+		</button>
+
+		<button id="fadeto4">
+			Fade To 1.0
+		</button>
+
+		<div id="theDiv">
+		</div>
+
+		<h1>
+			Test Text After Hiding!
+		</h1>
+	</body>
+</html>

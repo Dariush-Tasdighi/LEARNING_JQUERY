@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Learning Filters
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			// What Is The Difference Between Two Below Codes?
+
+			//$('ul li[class=a]').css('border', '1px solid red');
+
+			$('ul:has(li[class=a])').css('border', '1px solid red');
+
+		});
+
+	</script>
+
+	<style>
+		.a {
+			color: Navy;
+		}
+
+		.b {
+			color: Maroon;
+		}
+	</style>
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">
+			Item 1
+		</li>
+		<li class="b">
+			Item 2
+		</li>
+		<li class="a">
+			Item 3
+		</li>
+		<li class="b">
+			Item 4
+		</li>
+	</ul>
+
+	<ul id="list2">
+		<li>
+			Item 5
+		</li>
+		<li>
+			Item 6
+		</li>
+		<li>
+			Item 7
+		</li>
+		<li>
+			Item 8
+		</li>
+	</ul>
+
+	<ul id="list3">
+		<li class="a">
+			Item 9
+		</li>
+		<li class="b">
+			Item 10
+		</li>
+		<li class="a">
+			Item 11
+		</li>
+		<li class="b">
+			Item 12
+		</li>
+	</ul>
+</body>
+</html>
+

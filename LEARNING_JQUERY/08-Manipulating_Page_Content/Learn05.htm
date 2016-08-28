@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Manipulating Page Content
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			alert($('body').html());
+
+			//$('ul#list1').html('<li>This is a new list item!</li>');
+
+			//$('ul#list1').html('<li>This is a new list item!');
+
+			$('ul#list1').html('<li><b>This is a new list item!');
+
+			alert($('body').html());
+
+		});
+
+	</script>
+
+	<style>
+		.a {
+			color: Navy;
+		}
+
+		.b {
+			color: Maroon;
+		}
+	</style>
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">
+			Item 1
+		</li>
+		<li class="b">
+			Item 2
+		</li>
+		<li class="a">
+			Item 3
+		</li>
+		<li class="b">
+			Item 4
+		</li>
+	</ul>
+</body>
+</html>
+

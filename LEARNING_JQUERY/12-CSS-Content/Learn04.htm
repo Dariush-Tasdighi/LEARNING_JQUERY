@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		CSS Content
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			alert($('body').html());
+
+			$('p').addClass('red');
+
+			alert($('body').html());
+
+		});
+
+	</script>
+
+	<style>
+		.red {
+			color: Red;
+			background-color: Yellow;
+		}
+
+		.blue {
+			color: Blue;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		This is paragraph 1
+	</p>
+
+	<p class="red">
+		This is paragraph 2
+	</p>
+
+	<p class="blue">
+		This is paragraph 3
+	</p>
+</body>
+</html>

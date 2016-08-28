@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Replacing Content
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			alert($('body').html());
+
+			// Solution (1)
+			//$('p').wrap('<div style="border: thin solid red; margin: 10px; padding: 10px;">');
+			// /Solution (1)
+
+			// Solution (2)
+			$('p').wrap('<div style="border: thin solid red; margin: 10px; padding: 10px;"></div>');
+			// /Solution (2)
+
+			alert($('body').html());
+
+		});
+
+	</script>
+
+	<style>
+		.a {
+			color: Navy;
+		}
+
+		.b {
+			color: Maroon;
+		}
+	</style>
+</head>
+<body>
+	<p class="a">
+		This is paragraph 1
+	</p>
+
+	<p class="b">
+		This is paragraph 2
+	</p>
+
+	<p class="a">
+		This is paragraph 3
+	</p>
+
+	<p class="b">
+		This is paragraph 4
+	</p>
+</body>
+</html>

@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Binding and Unbinding Events with jQuery
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			//$('table.data tr:odd').addClass('odd');
+			//$('table.data tr:even').addClass('even');
+
+			$('table.data tr:nth-child(odd)').addClass('odd');
+			$('table.data tr:nth-child(even)').addClass('even');
+
+			$('table.data tr').on('click', disableHighlighting);
+			$('table.data tr').on('mouseenter mouseleave', toggleHighlight);
+
+		});
+
+		function toggleHighlight(e) {
+
+			$(this).toggleClass('highlighted');
+
+		}
+
+		function disableHighlighting(e) {
+
+			$(this).addClass('disabled');
+			$(this).unbind('mouseenter mouseleave', toggleHighlight);
+
+		}
+
+	</script>
+
+	<style type='text/css'>
+		tr.odd {
+			background-color: khaki;
+		}
+
+		tr.even {
+			background-color: beige;
+		}
+
+		tr.highlighted {
+			background-color: Orange;
+		}
+
+		tr.disabled {
+			background-color: lightgray;
+			text-decoration: line-through;
+		}
+	</style>
+</head>
+<body>
+	<table class="data" width="600" border="1">
+		<tr>
+			<td>
+				This is my row!
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				This is my row!
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				This is my row!
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				This is my row!
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				This is my row!
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				This is my row!
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				This is my row!
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				This is my row!
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				This is my row!
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				This is my row!
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+

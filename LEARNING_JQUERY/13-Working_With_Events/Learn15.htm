@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Binding and Unbinding Events with jQuery
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			$('div#divData').on('mouseover', function () {
+
+				$('div#divMouseOver').append('<br />Mouse Over.');
+
+			});
+
+			$('div#divData').on('mouseenter', function () {
+
+				$('div#divMouseEnter').append('<br />Mouse Enter.');
+
+			});
+
+			$('div#divData').on('mouseout', function () {
+
+				$('div#divMouseOut').append('<br />Mouse Out.');
+
+			});
+
+			$('div#divData').on('mouseleave', function () {
+
+				$('div#divMouseLeave').append('<br />Mouse Leave.');
+
+			});
+
+		});
+
+	</script>
+
+	<style type='text/css'>
+		div {
+			width: 200px;
+			background-color: gray;
+		}
+
+			div#divData {
+				height: 200px;
+				background-color: yellow;
+			}
+	</style>
+</head>
+<body>
+	<div id="divData">
+	</div>
+
+	<br />
+
+	<h3>
+		Mouse Over:
+	</h3>
+
+	<div id="divMouseOver">
+	</div>
+
+	<h3>
+		Mouse Enter:
+	</h3>
+
+	<div id="divMouseEnter">
+	</div>
+
+	<h3>
+		Mouse Out:
+	</h3>
+
+	<div id="divMouseOut">
+	</div>
+
+	<h3>
+		Mouse Leave:
+	</h3>
+
+	<div id="divMouseLeave">
+	</div>
+</body>
+</html>

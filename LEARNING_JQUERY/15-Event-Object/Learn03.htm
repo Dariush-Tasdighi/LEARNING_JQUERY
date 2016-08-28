@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Event-Object
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(function () {
+
+			$('div.normal').click(function (e) {
+
+				alert('Clicked on Div!');
+
+				// Disable Event Drilling!
+				return (false);
+
+			});
+
+			$('body').click(function (e) {
+
+				alert('Clicked on Body!');
+
+			});
+
+		});
+
+	</script>
+
+	<style type='text/css'>
+		div.normal {
+			width: 400px;
+			height: 100px;
+			margin: 10px;
+			padding: 10px;
+			font-size: 18pt;
+			color: Black;
+			background-color: #CCCCCC;
+		}
+	</style>
+</head>
+<body>
+	<h1>
+		Driling Event Example
+	</h1>
+
+	<div class="normal">
+		This div has normal class!
+	</div>
+
+	<div>
+		This div does not have normal class!
+	</div>
+
+	<div class="normal">
+		This div has normal class!
+	</div>
+</body>
+</html>
+

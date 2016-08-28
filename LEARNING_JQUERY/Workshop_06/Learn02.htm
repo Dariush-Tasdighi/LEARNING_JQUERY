@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			Learning Filters
+		</title>
+
+		<script src="Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+		<script>
+			$(document).ready(function () {
+				$("input#txtFullName").focus();
+
+				$("input#txtFullName").keydown(function (e) {
+					//alert(e.which);
+
+					switch (e.which) {
+						case 65:
+							{
+								//e.preventDefault();
+								e.which = 66;
+								break;
+							}
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<form method="post" action="Learn02.htm">
+			Full Name
+			<br />
+			<input type="text" id="txtFullName" />
+
+			<br />
+			<br />
+
+			<input type="submit" value="(S)ubmit" accesskey="S"/>
+		</form>
+	</body>
+</html>
+

@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			jQuery Showing and Hiding an Element
+		</title>
+
+		<script src="../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+		<script>
+
+			$(function () {
+				$("#show1").click(function () {
+					$("div#theDiv").show("slow");
+				});
+
+				$("#show2").click(function () {
+					$("div#theDiv").show("normal");
+				});
+
+				$("#show3").click(function () {
+					$("div#theDiv").show("fast");
+				});
+
+				$("#show4").click(function () {
+					$("div#theDiv").show(10000);
+				});
+
+				$("#hide1").click(function () {
+					$("div#theDiv").hide("slow");
+				});
+
+				$("#hide2").click(function () {
+					$("div#theDiv").hide("normal");
+				});
+
+				$("#hide3").click(function () {
+					$("div#theDiv").hide("fast");
+				});
+
+				$("#hide4").click(function () {
+					$("div#theDiv").hide(10000);
+				});
+
+				$("#toggle1").click(function () {
+					$("div#theDiv").toggle("slow");
+				});
+
+				$("#toggle2").click(function () {
+					$("div#theDiv").toggle("normal");
+				});
+
+				$("#toggle3").click(function () {
+					$("div#theDiv").toggle("fast");
+				});
+
+				$("#toggle4").click(function () {
+					$("div#theDiv").toggle(10000);
+				});
+			});
+
+		</script>
+
+		<style>
+			div#theDiv {
+				width: 200px;
+				height: 200px;
+				cursor: pointer;
+				background: blue;
+				margin: 10px;
+				padding: 20px;
+				border: 2px solid black;
+			}
+
+			p, span {
+				font-size: 16pt;
+			}
+
+			button {
+				margin: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			Showing and Hiding an Element
+		</p>
+
+		<div style="direction: rtl; font-size: 10pt; font-family: Tahoma;">
+			در حالی که موجوديت ما در حال محو شدن می باشد، بر روی دکمه نمايش مجددا کليک نماييد
+			<br />
+			خواهيد ديد که انيميش دوم Cache می شود.
+		</div>
+
+		<button id="show1">
+			Show
+		</button>
+
+		<button id="show2">
+			Show
+		</button>
+
+		<button id="show3">
+			Show
+		</button>
+
+		<button id="show4">
+			Show
+		</button>
+
+		<br />
+
+		<button id="hide1">
+			Hide
+		</button>
+
+		<button id="hide2">
+			Hide
+		</button>
+
+		<button id="hide3">
+			Hide
+		</button>
+
+		<button id="hide4">
+			Hide
+		</button>
+
+		<br />
+
+		<button id="toggle1">
+			Toggle
+		</button>
+
+		<button id="toggle2">
+			Toggle
+		</button>
+
+		<button id="toggle3">
+			Toggle
+		</button>
+
+		<button id="toggle4">
+			Toggle
+		</button>
+
+		<div id="theDiv">
+		</div>
+	</body>
+</html>

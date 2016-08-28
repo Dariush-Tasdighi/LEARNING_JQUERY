@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Traversing
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			// Solution (1)
+			//$('p').css('margin-left', '10px');
+			//$('p').css('border', '1px solid red');
+			// /Solution (1)
+
+			// Solution (2)
+			//$('p').css('margin-left', '10px').css('border', '1px solid red');
+			// /Solution (2)
+
+			// Solution (3)
+			//$('p')
+			//	.css('margin-left', '10px')
+			//	.css('border', '1px solid red');
+			// /Solution (3)
+
+			// Solution (4)
+			// به ازای هر پاراگرافی که در داخل صفحه وجود دارد، تابع ذيل را اجرا کن
+			//$('p').each(function () {
+
+			//	$(this).css('margin-left', '10px');
+			//	$(this).css('border', '1px solid red');
+
+			//});
+			// /Solution (4)
+
+			// Solution (5)
+			//$('p').each(function () {
+
+			//	$(this).css('margin-left', '10px').css('border', '1px solid red');
+
+			//});
+			// /Solution (5)
+
+			// Solution (6)
+			$('p').each(function () {
+
+				$(this)
+					.css('margin-left', '10px')
+					.css('border', '1px solid red');
+
+			});
+			// /Solution (6)
+
+		});
+
+	</script>
+
+	<style>
+		.a {
+			color: Navy;
+		}
+
+		.b {
+			color: Maroon;
+		}
+	</style>
+</head>
+<body>
+	<p class="a">
+		This is paragraph 1
+	</p>
+
+	<p class="b">
+		This is paragraph 2
+	</p>
+
+	<p class="a">
+		This is paragraph 3
+	</p>
+
+	<p class="b">
+		This is paragraph 4
+	</p>
+</body>
+</html>

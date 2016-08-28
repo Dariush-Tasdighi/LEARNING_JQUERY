@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>
+		Learning Selectors
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			alert('Pause!');
+
+			$('p a').css('border', '1px solid red');
+
+		});
+
+	</script>
+</head>
+<body>
+	<a href="http://www.IranianExperts.com">Link 1</a>
+
+	<br />
+
+	<p>
+		<a href="http://www.IranianExperts.com">Link 2</a>
+		<br />
+		<br />
+		<a href="http://www.IranianExperts.com">Link 3</a>
+	</p>
+
+	<div>
+		<a href="http://www.IranianExperts.com">Link 4</a>
+	</div>
+
+	<p>
+		<span>
+			<a href="http://www.IranianExperts.com">Link 5</a>
+		</span>
+	</p>
+</body>
+</html>
+

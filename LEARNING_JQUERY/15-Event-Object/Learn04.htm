@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Event-Object
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(function () {
+
+			$('input#txtAge').keypress(function (e) {
+
+				if (e.keyCode == 13) {
+
+					$('input#txtFullName').focus();
+
+					return (false);
+
+				}
+				else {
+
+					if ((e.keyCode < 48) || (e.keyCode > 58)) {
+
+						// بی خیال شو = شتر دیدی ندیدی
+						e.preventDefault();
+
+						//event.preventDefault();
+
+					}
+				}
+
+			});
+
+		});
+
+	</script>
+
+	<style type='text/css'>
+	</style>
+</head>
+<body>
+
+	<form id="frmData" name="frmData" action="Learn01.htm" method="post">
+
+		Age
+		<br />
+		<input type="text" id="txtAge" />
+
+		<br />
+		<br />
+
+		Full Name
+		<br />
+		<input type="text" id="txtFullName" />
+
+		<br />
+		<br />
+
+		<input type="submit" value="Submit" />
+
+	</form>
+
+</body>
+</html>

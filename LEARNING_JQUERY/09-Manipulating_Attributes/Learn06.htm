@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Manipulating Attributes
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			var strFullName =
+				$('input#txtFullName').val();
+
+			alert(strFullName);
+
+			var strDescription =
+				$('textarea#txtDescription').val();
+
+			alert(strDescription);
+
+		});
+
+	</script>
+
+	<style>
+	</style>
+</head>
+<body>
+	<input id="txtFullName" type="text" value="Hello, World! (1)!" />
+	<br />
+	<textarea id="txtDescription" rows="10" cols="60">Hello, World! (2)!</textarea>
+</body>
+</html>

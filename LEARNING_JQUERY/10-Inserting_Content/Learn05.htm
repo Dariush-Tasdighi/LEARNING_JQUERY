@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Inserting Content
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			alert($('body').html());
+
+			$('p').before('{BEFORE}');
+			$('p').prepend('{PREPEND}');
+			$('p').append('{APPEND}');
+			$('p').after('{AFTER}');
+
+			alert($('body').html());
+
+		});
+
+	</script>
+
+	<style>
+		.p {
+			color: Blue;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		This is paragraph!
+	</p>
+</body>
+</html>
+

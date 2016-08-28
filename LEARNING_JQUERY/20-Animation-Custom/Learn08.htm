@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			jQuery Image Rotator
+		</title>
+
+		<script src="../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+		<script>
+
+			$(function () {
+			});
+
+		</script>
+
+		<style>
+			div#slideShow {
+				width: 400px;
+				height: 400px;
+			}
+
+				div#slideShow div {
+					z-index: 0;
+					position: absolute;
+				}
+
+					div#slideShow div.previous {
+						z-index: 1;
+					}
+
+					div#slideShow div.current {
+						z-index: 2;
+					}
+		</style>
+	</head>
+	<body>
+		<h1>
+			jQuery-based Image Rotator
+		</h1>
+
+		<div id="slideShow">
+			<div class="current">
+				<img src="../Images/Grass.jpg" alt="Photo Gallery" width="400" height="400" class="gallery" />
+			</div>
+
+			<div>
+				<img src="../Images/Leaf.jpg" alt="Photo Gallery" width="400" height="400" class="gallery" />
+			</div>
+
+			<div>
+				<img src="../Images/Spring.jpg" alt="Photo Gallery" width="400" height="400" class="gallery" />
+			</div>
+
+			<div>
+				<img src="../Images/Water.jpg" alt="Photo Gallery" width="400" height="400" class="gallery" />
+			</div>
+		</div>
+	</body>
+</html>

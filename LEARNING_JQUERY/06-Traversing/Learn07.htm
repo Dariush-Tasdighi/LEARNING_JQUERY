@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Traversing
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			var intBorder = 1;
+			var intLeftMargin = 10;
+
+			$('p').each(function () {
+
+				$(this)
+					.css('margin-left', intLeftMargin + 'px')
+					.css('border', intBorder + 'px solid red');
+
+				intBorder += 2;
+				intLeftMargin += 10;
+
+				//intBorder = intBorder + 2;
+				//intLeftMargin = intLeftMargin + 10;
+
+			});
+
+		});
+
+	</script>
+
+	<style>
+		.a {
+			color: Navy;
+		}
+
+		.b {
+			color: Maroon;
+		}
+	</style>
+</head>
+<body>
+	<p class="a">
+		This is paragraph 1
+	</p>
+
+	<p class="b">
+		This is paragraph 2
+	</p>
+
+	<p class="a">
+		This is paragraph 3
+	</p>
+
+	<p class="b">
+		This is paragraph 4
+	</p>
+</body>
+</html>

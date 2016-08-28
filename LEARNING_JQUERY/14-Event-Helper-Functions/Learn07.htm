@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Event Helper Functions
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(function () {
+
+			$('div.fullName').hover(toggleHighlight, toggleHighlight);
+
+			$('input#btnSubmit').click(function (e) {
+
+				var strLastName = $('input#txtLastName').val();
+				var strFirstName = $('input#txtFirstName').val();
+
+				$('input#txtLastName').val('');
+				$('input#txtFirstName').val('');
+
+				var varFullName = $('<div class="fullName"></div>');
+
+				//$('div#fullNames').append(varFullName);
+				$('div#fullNames').prepend(varFullName);
+
+				// Solution (1)
+				$(varFullName).append('First Name: ' + strFirstName);
+				$(varFullName).append('<br />');
+				$(varFullName).append('Last Name: ' + strLastName);
+				// Solution (1)
+
+				// Solution (2)
+				//$('div#fullNames div:last').append('First Name: ' + strFirstName);
+				//$('div#fullNames div:last').append('<br />');
+				//$('div#fullNames div:last').append('Last Name: ' + strLastName);
+
+				//$('div#fullNames div:first').append('First Name: ' + strFirstName);
+				//$('div#fullNames div:first').append('<br />');
+				//$('div#fullNames div:first').append('Last Name: ' + strLastName);
+				// /Solution (2)
+
+			});
+
+		});
+
+		function toggleHighlight(e) {
+
+			$(this).toggleClass('highlighted');
+
+		}
+
+	</script>
+
+	<style type='text/css'>
+		legend {
+		}
+
+		fieldset {
+		}
+
+		div.field {
+			margin: 4px;
+			padding: 4px;
+		}
+
+		div.buttons {
+			margin: 4px;
+			padding: 4px;
+		}
+
+		div#fullNames {
+			margin: 4px;
+			padding: 4px;
+			border: 1px solid Black;
+			background-color: white;
+		}
+
+		div.fullName {
+			margin: 4px;
+			padding: 4px;
+			border: 1px outset;
+			color: Black;
+			background-color: lightgray;
+		}
+
+		div.highlighted {
+			border: 1px inset;
+			color: Blue;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>
+			Insert Full Name
+		</legend>
+
+		<div class="field">
+			First Name
+			<br />
+			<input type="text" id="txtFirstName" />
+		</div>
+
+		<div class="field">
+			Last Name
+			<br />
+			<input type="text" id="txtLastName" />
+		</div>
+
+		<div class="buttons">
+			<input type="button" id="btnSubmit" value="(I)nsert" accesskey="I" />
+		</div>
+	</fieldset>
+
+	<br />
+
+	<div id="fullNames">
+		<div class="fullName">
+			First Name: Dariush
+			<br />
+			Last Name: Tasdighi
+		</div>
+
+		<div class="fullName">
+			First Name: Ali Reza
+			<br />
+			Last Name: Alavi
+		</div>
+
+		<div class="fullName">
+			First Name: Babak
+			<br />
+			Last Name: Ghaffari
+		</div>
+	</div>
+</body>
+</html>

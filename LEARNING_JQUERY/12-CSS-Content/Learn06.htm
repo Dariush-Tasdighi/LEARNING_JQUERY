@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		CSS Content
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			// آيا در مجموعه پاراگراف های انتخاب شده، پاراگرافی وجود دارد
+			// که چنين کلاسی داشته باشد؟ دقت کنيد که دستور ذيل صرفا مربوط به
+			// اولين پاراگراف نمی باشد
+			alert($('p').hasClass('blue'));
+			alert($('p').hasClass('green'));
+
+		});
+
+	</script>
+
+	<style>
+		.red {
+			color: Red;
+			background-color: Yellow;
+		}
+
+		.blue {
+			color: Blue;
+			border: thin solid Gray;
+		}
+	</style>
+</head>
+<body>
+	<p class="red">
+		This is paragraph 1
+	</p>
+
+	<p class="blue">
+		This is paragraph 2
+	</p>
+
+	<p class="red">
+		This is paragraph 3
+	</p>
+</body>
+</html>

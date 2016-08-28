@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B4097D73-66B4-4F8D-9588-16608F59D72C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LEARNING_JQUERY</RootNamespace>
+    <AssemblyName>LEARNING_JQUERY</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="04-Filters_3\Sample01.htm" />
+    <Content Include="21-Downloaded-Custom-JQueryUI\jquery-ui-1.10.3.custom.zip" />
+    <Content Include="24-My-Students-Samples\FACEBOOK_PAGE_SAMPLE_1391_04_11_VERSION_1.0.0.rar" />
+    <Content Include="App_Data\Documents\DT Learning jQuery.xps" />
+    <Content Include="App_Data\Documents\jQuery-1.5-Visual-Cheat-Sheet.pdf" />
+    <Content Include="App_Data\Documents\Startup.docx" />
+    <Content Include="Scripts\jquery-2.2.1.js" />
+    <Content Include="Scripts\jquery-2.2.1.min.js" />
+    <Content Include="Scripts\jquery-2.2.1.min.map" />
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="00-Startup\Learn01.html" />
+    <Content Include="00-Startup\Learn02.html" />
+    <Content Include="00-Startup\Learn03.html" />
+    <Content Include="00-Startup\Learn04.html" />
+    <Content Include="00-Startup\Learn05.html" />
+    <Content Include="00-Startup\Learn06.html" />
+    <Content Include="00-Startup\Learn07.html" />
+    <Content Include="00-Startup\Learn08.html" />
+    <Content Include="01-Selectors\Learn00.htm" />
+    <Content Include="01-Selectors\Learn01.htm" />
+    <Content Include="01-Selectors\Learn02.htm" />
+    <Content Include="01-Selectors\Learn03.htm" />
+    <Content Include="01-Selectors\Learn04.htm" />
+    <Content Include="01-Selectors\Learn05.htm" />
+    <Content Include="01-Selectors\Learn06.htm" />
+    <Content Include="01-Selectors\Learn07.htm" />
+    <Content Include="01-Selectors\Learn08.htm" />
+    <Content Include="01-Selectors\Learn09.htm" />
+    <Content Include="01-Selectors\Learn10.htm" />
+    <Content Include="01-Selectors\Learn11.htm" />
+    <Content Include="02-Filters_1\Learn00.htm" />
+    <Content Include="02-Filters_1\Learn01.htm" />
+    <Content Include="02-Filters_1\Learn02.htm" />
+    <Content Include="02-Filters_1\Learn03.htm" />
+    <Content Include="02-Filters_1\Learn04.htm" />
+    <Content Include="02-Filters_1\Learn05.htm" />
+    <Content Include="02-Filters_1\Learn06.htm" />
+    <Content Include="02-Filters_1\Learn07.htm" />
+    <Content Include="02-Filters_1\Learn08.htm" />
+    <Content Include="02-Filters_1\Learn09.htm" />
+    <Content Include="02-Filters_1\Learn10.htm" />
+    <Content Include="02-Filters_1\Sample01.htm" />
+    <Content Include="02-Filters_1\Sample02.htm" />
+    <Content Include="02-Filters_1\Sample03.htm" />
+    <Content Include="03-Filters_2\Learn00.htm" />
+    <Content Include="03-Filters_2\Learn01.htm" />
+    <Content Include="03-Filters_2\Learn02.htm" />
+    <Content Include="03-Filters_2\Learn03.htm" />
+    <Content Include="03-Filters_2\Learn04.htm" />
+    <Content Include="03-Filters_2\Learn05.htm" />
+    <Content Include="03-Filters_2\Learn06.htm" />
+    <Content Include="03-Filters_2\Learn07.htm" />
+    <Content Include="03-Filters_2\Learn08.htm" />
+    <Content Include="04-Filters_3\Learn00.htm" />
+    <Content Include="04-Filters_3\Learn01.htm" />
+    <Content Include="04-Filters_3\Learn02.htm" />
+    <Content Include="04-Filters_3\Learn03.htm" />
+    <Content Include="04-Filters_3\Learn04.htm" />
+    <Content Include="04-Filters_3\Learn05.htm" />
+    <Content Include="04-Filters_3\Learn06.htm" />
+    <Content Include="04-Filters_3\Learn07.htm" />
+    <Content Include="04-Filters_3\Learn08.htm" />
+    <Content Include="04-Filters_3\Learn09.htm" />
+    <Content Include="04-Filters_3\Learn10.htm" />
+    <Content Include="04-Filters_3\Learn11.htm" />
+    <Content Include="04-Filters_3\Sample02.htm" />
+    <Content Include="04-Filters_3\Sample03.htm" />
+    <Content Include="05-Form_Elements\Learn00.htm" />
+    <Content Include="05-Form_Elements\Learn01.htm" />
+    <Content Include="05-Form_Elements\Learn02.htm" />
+    <Content Include="05-Form_Elements\Learn03.htm" />
+    <Content Include="05-Form_Elements\Learn04.htm" />
+    <Content Include="05-Form_Elements\Learn05.htm" />
+    <Content Include="05-Form_Elements\Learn06.htm" />
+    <Content Include="06-Traversing\Learn00.htm" />
+    <Content Include="06-Traversing\Learn01.htm" />
+    <Content Include="06-Traversing\Learn02.htm" />
+    <Content Include="06-Traversing\Learn03.htm" />
+    <Content Include="06-Traversing\Learn04.htm" />
+    <Content Include="06-Traversing\Learn05.htm" />
+    <Content Include="06-Traversing\Learn06.htm" />
+    <Content Include="06-Traversing\Learn07.htm" />
+    <Content Include="07-Chaining\Learn00.htm" />
+    <Content Include="07-Chaining\Learn01.htm" />
+    <Content Include="07-Chaining\Learn02.htm" />
+    <Content Include="07-Chaining\Learn03.htm" />
+    <Content Include="07-Chaining\Learn04.htm" />
+    <Content Include="08-Manipulating_Page_Content\Learn00.htm" />
+    <Content Include="08-Manipulating_Page_Content\Learn01.htm" />
+    <Content Include="08-Manipulating_Page_Content\Learn02.htm" />
+    <Content Include="08-Manipulating_Page_Content\Learn03.htm" />
+    <Content Include="08-Manipulating_Page_Content\Learn04.htm" />
+    <Content Include="08-Manipulating_Page_Content\Learn05.htm" />
+    <Content Include="08-Manipulating_Page_Content\Learn06.htm" />
+    <Content Include="08-Manipulating_Page_Content\Learn07.htm" />
+    <Content Include="08-Manipulating_Page_Content\Learn08.htm" />
+    <Content Include="09-Manipulating_Attributes\Learn00.htm" />
+    <Content Include="09-Manipulating_Attributes\Learn01.htm" />
+    <Content Include="09-Manipulating_Attributes\Learn02.htm" />
+    <Content Include="09-Manipulating_Attributes\Learn04.htm" />
+    <Content Include="09-Manipulating_Attributes\Learn05.htm" />
+    <Content Include="09-Manipulating_Attributes\Learn06.htm" />
+    <Content Include="09-Manipulating_Attributes\Learn07.htm" />
+    <Content Include="09-Manipulating_Attributes\Learn08.htm" />
+    <Content Include="10-Inserting_Content\Learn00.htm" />
+    <Content Include="10-Inserting_Content\Learn01.htm" />
+    <Content Include="10-Inserting_Content\Learn02.htm" />
+    <Content Include="10-Inserting_Content\Learn03.htm" />
+    <Content Include="10-Inserting_Content\Learn04.htm" />
+    <Content Include="10-Inserting_Content\Learn05.htm" />
+    <Content Include="10-Inserting_Content\Learn06.htm" />
+    <Content Include="10-Inserting_Content\Learn07.htm" />
+    <Content Include="10-Inserting_Content\Learn08.htm" />
+    <Content Include="10-Inserting_Content\Learn09.htm" />
+    <Content Include="10-Inserting_Content\Learn10.htm" />
+    <Content Include="10-Inserting_Content\Sample01.htm" />
+    <Content Include="10-Inserting_Content\Sample02.htm" />
+    <Content Include="10-Inserting_Content\Sample03.htm" />
+    <Content Include="11-Replacing-Content\Learn00.htm" />
+    <Content Include="11-Replacing-Content\Learn01.htm" />
+    <Content Include="11-Replacing-Content\Learn02.htm" />
+    <Content Include="11-Replacing-Content\Learn03.htm" />
+    <Content Include="11-Replacing-Content\Learn04.htm" />
+    <Content Include="11-Replacing-Content\Learn05.htm" />
+    <Content Include="11-Replacing-Content\Learn06.htm" />
+    <Content Include="11-Replacing-Content\Learn07.htm" />
+    <Content Include="11-Replacing-Content\Learn08.htm" />
+    <Content Include="11-Replacing-Content\Learn09.htm" />
+    <Content Include="11-Replacing-Content\Learn10.htm" />
+    <Content Include="11-Replacing-Content\Learn11.htm" />
+    <Content Include="11-Replacing-Content\Learn12.htm" />
+    <Content Include="12-CSS-Content\Learn01.htm" />
+    <Content Include="12-CSS-Content\Learn02.htm" />
+    <Content Include="12-CSS-Content\Learn03.htm" />
+    <Content Include="12-CSS-Content\Learn04.htm" />
+    <Content Include="12-CSS-Content\Learn05.htm" />
+    <Content Include="12-CSS-Content\Learn06.htm" />
+    <Content Include="12-CSS-Content\Learn07.htm" />
+    <Content Include="12-CSS-Content\Learn08.htm" />
+    <Content Include="12-CSS-Content\Learn09.htm" />
+    <Content Include="12-CSS-Content\Learn10.htm" />
+    <Content Include="12-CSS-Content\Learn11.htm" />
+    <Content Include="12-CSS-Content\Learn12.htm" />
+    <Content Include="12-CSS-Content\Learn13.htm" />
+    <Content Include="12-CSS-Content\Learn14.htm" />
+    <Content Include="13-Working_With_Events\Learn01.htm" />
+    <Content Include="13-Working_With_Events\Learn02.htm" />
+    <Content Include="13-Working_With_Events\Learn03.htm" />
+    <Content Include="13-Working_With_Events\Learn04.htm" />
+    <Content Include="13-Working_With_Events\Learn05.htm" />
+    <Content Include="13-Working_With_Events\Learn06.htm" />
+    <Content Include="13-Working_With_Events\Learn07.htm" />
+    <Content Include="13-Working_With_Events\Learn08.htm" />
+    <Content Include="13-Working_With_Events\Learn09.htm" />
+    <Content Include="13-Working_With_Events\Learn10.htm" />
+    <Content Include="13-Working_With_Events\Learn11.htm" />
+    <Content Include="13-Working_With_Events\Learn12.htm" />
+    <Content Include="13-Working_With_Events\Learn13.htm" />
+    <Content Include="13-Working_With_Events\Learn14.htm" />
+    <Content Include="13-Working_With_Events\Learn15.htm" />
+    <Content Include="14-Event-Helper-Functions\Learn01.htm" />
+    <Content Include="14-Event-Helper-Functions\Learn02.htm" />
+    <Content Include="14-Event-Helper-Functions\Learn03.htm" />
+    <Content Include="14-Event-Helper-Functions\Learn04.htm" />
+    <Content Include="14-Event-Helper-Functions\Learn05.htm" />
+    <Content Include="14-Event-Helper-Functions\Learn06.htm" />
+    <Content Include="14-Event-Helper-Functions\Learn07.htm" />
+    <Content Include="14-Event-Helper-Functions\Learn08.htm" />
+    <Content Include="14-Event-Helper-Functions\Learn09.htm" />
+    <Content Include="15-Event-Object\Learn01.htm" />
+    <Content Include="15-Event-Object\Learn02.htm" />
+    <Content Include="15-Event-Object\Learn03.htm" />
+    <Content Include="15-Event-Object\Learn04.htm" />
+    <Content Include="16-Practical-Examples\Learn01.htm" />
+    <Content Include="16-Practical-Examples\Learn02.htm" />
+    <Content Include="16-Practical-Examples\Learn03.htm" />
+    <Content Include="17-Animation-Showing-Hiding\Learn01.htm" />
+    <Content Include="17-Animation-Showing-Hiding\Learn02.htm" />
+    <Content Include="17-Animation-Showing-Hiding\Learn03.htm" />
+    <Content Include="18-Animation_Fading-In_Out\Learn01.htm" />
+    <Content Include="18-Animation_Fading-In_Out\Learn02.htm" />
+    <Content Include="18-Animation_Fading-In_Out\Learn03.htm" />
+    <Content Include="18-Animation_Fading-In_Out\Learn04.htm" />
+    <Content Include="18-Animation_Fading-In_Out\Learn05.htm" />
+    <Content Include="19-Animation-Sliding-Down-Up\Learn01.htm" />
+    <Content Include="19-Animation-Sliding-Down-Up\Learn02.htm" />
+    <Content Include="19-Animation-Sliding-Down-Up\Learn03.htm" />
+    <Content Include="19-Animation-Sliding-Down-Up\Learn04.htm" />
+    <Content Include="20-Animation-Custom\Learn01.htm" />
+    <Content Include="20-Animation-Custom\Learn02.htm" />
+    <Content Include="20-Animation-Custom\Learn03.htm" />
+    <Content Include="20-Animation-Custom\Learn04.htm" />
+    <Content Include="20-Animation-Custom\Learn06.htm" />
+    <Content Include="20-Animation-Custom\Learn07.htm" />
+    <Content Include="20-Animation-Custom\Learn08.htm" />
+    <Content Include="20-Animation-Custom\Learn09.htm" />
+    <Content Include="20-Animation-Custom\Learn10.htm" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\animated-overlay.gif" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\ui-bg_gloss-wave_45_817865_500x100.png" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\ui-bg_gloss-wave_60_fece2f_500x100.png" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\ui-bg_highlight-soft_100_feeebd_1x100.png" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\ui-bg_inset-soft_30_ffffff_1x100.png" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\ui-icons_3d3d3d_256x240.png" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\ui-icons_bd7b00_256x240.png" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\ui-icons_d19405_256x240.png" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\ui-icons_eb990f_256x240.png" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\ui-icons_ed9f26_256x240.png" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\ui-icons_fadc7a_256x240.png" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\images\ui-icons_ffe180_256x240.png" />
+    <Content Include="22-jQueryUI-Samples\Css\sunny\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="22-jQueryUI-Samples\Learn01.htm" />
+    <Content Include="22-jQueryUI-Samples\Learn02.htm" />
+    <Content Include="22-jQueryUI-Samples\Learn03.htm" />
+    <Content Include="22-jQueryUI-Samples\Learn04.htm" />
+    <Content Include="22-jQueryUI-Samples\Learn05.htm" />
+    <Content Include="22-jQueryUI-Samples\Scripts\jquery-1.8.3.min.js" />
+    <Content Include="22-jQueryUI-Samples\Scripts\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="23-Ajax\Learn01.aspx" />
+    <Content Include="23-Ajax\Learn02.aspx" />
+    <Content Include="23-Ajax\Learn03.aspx" />
+    <Content Include="23-Ajax\Learn04.aspx" />
+    <Content Include="23-Ajax\Learn05.aspx" />
+    <Content Include="25-FAQ\Learn01.htm" />
+    <Content Include="App_Data\Documents\jQuery 1.5 Visual Cheat Sheet.png" />
+    <Content Include="Content\themes\base\images\animated-overlay.gif" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.menu.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.spinner.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\jquery.ui.tooltip.css" />
+    <Content Include="Content\themes\base\minified\images\animated-overlay.gif" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.menu.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.spinner.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="Images\Back.gif" />
+    <Content Include="Images\Email.gif" />
+    <Content Include="Images\Grass.jpg" />
+    <Content Include="Images\Leaf.jpg" />
+    <Content Include="Images\Loading.gif" />
+    <Content Include="Images\PDF.gif" />
+    <Content Include="Images\Spring.jpg" />
+    <Content Include="Images\Water.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="Workshop_01\Sample1.htm" />
+    <Content Include="Workshop_01\Sample2.htm" />
+    <Content Include="Workshop_01\Scripts\jquery-1.8.3.min.js" />
+    <Content Include="Workshop_01\Sample3.htm" />
+    <Content Include="Workshop_01\Scripts\TableEffects.js" />
+    <Content Include="Workshop_02\Sample01.htm" />
+    <Content Include="Workshop_02\Scripts\jquery.corner.js" />
+    <Content Include="Workshop_03\Index.htm" />
+    <Content Include="Workshop_03\Scripts\jquery.maskedinput.min.js" />
+    <Content Include="Workshop_05\Content\Site.css" />
+    <Content Include="Workshop_05\Index.htm" />
+    <Content Include="Workshop_05\Scripts\enableTableFeatures.js" />
+    <Content Include="Workshop_05\Scripts\jquery-1.8.3.min.js" />
+    <Content Include="Workshop_06\Learn01.htm" />
+    <Content Include="Workshop_06\Learn02.htm" />
+    <Content Include="Workshop_06\Scripts\jquery-1.8.3.min.js" />
+    <Content Include="Workshop_07\Content\sunny\images\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+    <Content Include="Workshop_07\Content\sunny\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Workshop_07\Content\sunny\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Workshop_07\Content\sunny\images\ui-bg_gloss-wave_45_817865_500x100.png" />
+    <Content Include="Workshop_07\Content\sunny\images\ui-bg_gloss-wave_60_fece2f_500x100.png" />
+    <Content Include="Workshop_07\Content\sunny\images\ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+    <Content Include="Workshop_07\Content\sunny\images\ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+    <Content Include="Workshop_07\Content\sunny\images\ui-bg_highlight-soft_100_feeebd_1x100.png" />
+    <Content Include="Workshop_07\Content\sunny\images\ui-bg_inset-soft_30_ffffff_1x100.png" />
+    <Content Include="Workshop_07\Content\sunny\images\ui-icons_3d3d3d_256x240.png" />
+    <Content Include="Workshop_07\Content\sunny\images\ui-icons_bd7b00_256x240.png" />
+    <Content Include="Workshop_07\Content\sunny\images\ui-icons_d19405_256x240.png" />
+    <Content Include="Workshop_07\Content\sunny\images\ui-icons_eb990f_256x240.png" />
+    <Content Include="Workshop_07\Content\sunny\images\ui-icons_ed9f26_256x240.png" />
+    <Content Include="Workshop_07\Content\sunny\images\ui-icons_fadc7a_256x240.png" />
+    <Content Include="Workshop_07\Content\sunny\images\ui-icons_ffe180_256x240.png" />
+    <Content Include="Workshop_07\Content\sunny\jquery-ui-1.9.2.custom.min.css" />
+    <Content Include="Workshop_07\Images\Loading.gif" />
+    <Content Include="Workshop_07\Learn01.htm" />
+    <Content Include="Workshop_07\Learn02.htm" />
+    <Content Include="Workshop_07\MixWithAjax.aspx" />
+    <Content Include="Workshop_07\Scripts\jquery-1.8.3.min.js" />
+    <Content Include="Workshop_07\Scripts\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="Workshop_08\Done.htm" />
+    <Content Include="Workshop_08\Learn01.htm" />
+    <Content Include="Workshop_08\Learn02.htm" />
+    <Content Include="Workshop_08\Learn03.htm" />
+    <Content Include="Workshop_08\Scripts\jquery-1.8.3.min.js" />
+    <Content Include="Workshop_08\Scripts\moment.min.js" />
+    <Content Include="Workshop_08\Scripts\xdate.js" />
+    <Content Include="Workshop_09\Content\mainMenu.css" />
+    <Content Include="Workshop_09\Content\mainMenu.js" />
+    <Content Include="Workshop_09\CreateingMenu01.html" />
+    <Content Include="Workshop_09\CreateingMenu02.html" />
+    <Content Include="Workshop_09\CreateingMenu03.html" />
+    <Content Include="Workshop_09\CreateingMenu04.html" />
+    <None Include="Workshop_09\Scripts\jquery-1.8.3.intellisense.js" />
+    <Content Include="Workshop_09\Scripts\jquery-1.8.3.js" />
+    <Content Include="Workshop_09\Scripts\jquery-1.8.3.min.js" />
+    <Content Include="Workshop_10_PersianDatePicker\Content\jquery.ui.persian.datepicker.css" />
+    <Content Include="Workshop_10_PersianDatePicker\Index.htm" />
+    <Content Include="Workshop_10_PersianDatePicker\Scripts\jquery-1.8.3.min.js" />
+    <Content Include="Workshop_10_PersianDatePicker\Scripts\jquery.ui.persian.datepicker.js" />
+    <Content Include="Workshop_11\Index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="23-Ajax\Learn01.aspx.cs">
+      <DependentUpon>Learn01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="23-Ajax\Learn02.aspx.cs">
+      <DependentUpon>Learn02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="23-Ajax\Learn03.aspx.cs">
+      <DependentUpon>Learn03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="23-Ajax\Learn04.aspx.cs">
+      <DependentUpon>Learn04.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="23-Ajax\Learn05.aspx.cs">
+      <DependentUpon>Learn05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Workshop_07\MixWithAjax.aspx.cs">
+      <DependentUpon>MixWithAjax.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>44742</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:44742/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

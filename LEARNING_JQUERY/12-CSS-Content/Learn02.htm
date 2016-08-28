@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		CSS Content
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			alert('Pause...');
+
+			// Set
+			$('p').css('border', '1px solid red');
+
+			alert($('body').html());
+
+		});
+
+	</script>
+
+	<style>
+		.red {
+			color: Red;
+		}
+
+		.blue {
+			color: Blue;
+			border: 2px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<p class="red">
+		This is paragraph 1
+	</p>
+
+	<p class="blue">
+		This is paragraph 2
+	</p>
+
+	<p class="red">
+		This is paragraph 3
+	</p>
+
+	<p class="blue">
+		This is paragraph 4
+	</p>
+
+	<p class="red">
+		This is paragraph 5
+	</p>
+
+	<p class="blue" style="border: 3px solid green;">
+		This is paragraph 6
+		دقت کنيد که جی کوئری بعد
+		از اعمال تمام استايل ها عمل می کند
+	</p>
+</body>
+</html>

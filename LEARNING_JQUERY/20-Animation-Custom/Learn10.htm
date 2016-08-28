@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			jQuery News Scroller
+		</title>
+
+		<script src="../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+		<script>
+
+			var s;
+			var blnContinue;
+
+			$(function () {
+				s = 0;
+				blnContinue = true;
+
+				setInterval("scroll()", 100);
+
+				$('div.scroll').mouseenter(
+					function (eventArgs) {
+						blnContinue = false;
+					});
+
+				$('div.scroll').mouseleave(
+					function (eventArgs) {
+						blnContinue = true;
+					});
+			});
+
+			function scroll() {
+				if (blnContinue) {
+					s++;
+					$('div.scroll').scrollTop(s);
+				}
+			}
+
+		</script>
+
+		<style>
+			div.scroll {
+				width: 200px;
+				height: 100px;
+				overflow: hidden;
+				color: Blue;
+				background-color: Yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<table width="100%">
+			<tr>
+				<td align="center">
+					<div class="scroll">
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+					</div>
+				</td>
+				<td align="center">
+					<div class="scroll">
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+					</div>
+				</td>
+				<td align="center">
+					<div class="scroll">
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+						<br />
+						Hello, World!
+					</div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

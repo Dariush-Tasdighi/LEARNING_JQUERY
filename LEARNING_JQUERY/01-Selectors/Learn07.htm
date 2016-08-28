@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>
+		Learning Selectors
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			alert('Pause!');
+
+			$('ul + p').css('border', '1px solid red');
+
+		});
+
+	</script>
+
+	<style>
+		.a {
+			color: Navy;
+		}
+
+		.b {
+			color: Maroon;
+		}
+	</style>
+</head>
+<body>
+	<h3>
+		اولين پاراگراف که
+		دقيقا بعد از تگ مربوطه بوده و
+		هم سطح (هم تراز) آن می باشد را انتخاب کن
+	</h3>
+
+	<ul id="list1">
+		<li class="a">
+			Item 1
+		</li>
+		<li class="b">
+			Item 2
+		</li>
+		<li class="a">
+			Item 3
+		</li>
+		<li class="b">
+			Item 4
+		</li>
+	</ul>
+
+	<p class="a">
+		This is paragraph 1
+	</p>
+
+	<p>
+		This is paragraph 2
+	</p>
+
+	<ul id="list2">
+		<li class="a">
+			Item 5
+		</li>
+		<li class="b">
+			Item 6
+		</li>
+		<li class="a">
+			Item 7
+		</li>
+		<li class="b">
+			Item 8
+		</li>
+	</ul>
+
+	<p class="a">
+		This is paragraph 3
+	</p>
+
+	<p>
+		This is paragraph 4
+	</p>
+
+	<ul id="list3">
+		<li class="a">
+			Item 9
+		</li>
+		<li class="b">
+			Item 10
+		</li>
+		<li class="a">
+			Item 11
+		</li>
+		<li class="b">
+			Item 12
+		</li>
+	</ul>
+
+	<div>
+		This is div!
+	</div>
+
+	<p class="a">
+		This is paragraph 5
+	</p>
+
+	<p>
+		This is paragraph 6
+	</p>
+
+	<ul id="list4">
+		<li class="a">
+			Item 13
+		</li>
+		<li class="b">
+			Item 14
+		</li>
+		<li class="a">
+			Item 15
+		</li>
+		<li class="b">
+			Item 16
+		</li>
+	</ul>
+
+	<div>
+		<p class="a">
+			This is paragraph 7
+		</p>
+	</div>
+</body>
+</html>
+

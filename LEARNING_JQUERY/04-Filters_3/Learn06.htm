@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Learning Filters
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			// Zero Based!
+			// دستور قديمی
+			//$('ul li:eq(0)').css('border', '1px solid red');
+
+			$('ul li:first-child').css('border', '1px solid red');
+
+		});
+
+	</script>
+
+	<style>
+		.a {
+			color: Navy;
+		}
+
+		.b {
+			color: Maroon;
+		}
+	</style>
+</head>
+<body>
+	<!--
+	در هر
+	ul
+	اولين
+	li
+	را انتخاب کن
+	-->
+
+	<ul id="list1">
+		<li class="a">
+			Item 1
+		</li>
+		<li class="b">
+			Item 2
+		</li>
+		<li class="a">
+			Item 3
+		</li>
+		<li class="b">
+			Item 4
+		</li>
+	</ul>
+
+	<ol id="list2">
+		<li class="a">
+			Item 5
+		</li>
+		<li class="b">
+			Item 6
+		</li>
+		<li class="a">
+			Item 7
+		</li>
+		<li class="b">
+			Item 8
+		</li>
+	</ol>
+
+	<ul id="list3">
+		<li class="a">
+			Item 9
+		</li>
+		<li class="b">
+			Item 10
+		</li>
+		<li class="a">
+			Item 11
+		</li>
+		<li class="b">
+			Item 12
+		</li>
+	</ul>
+</body>
+</html>

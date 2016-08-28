@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			Learning Filters
+		</title>
+
+		<script src="Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+		<script>
+			$(document).ready(function () {
+				$("input#txt1").focus();
+
+				//$("input[type=text]").keydown(function (e) {
+				//	if (e.which == 13) {
+				//		e.preventDefault();
+				//	}
+				//})
+
+				//$("input[type=text]").keypress(function (e) {
+				//	if (e.which == 13) {
+				//		e.preventDefault();
+				//	}
+				//})
+
+				$("#txt1").keydown(function (e) {
+					if (e.which == 13) {
+						e.preventDefault();
+
+						$("input#txt2").focus();
+					}
+				})
+
+				$("#txt1").keypress(function (e) {
+					if (e.which == 13) {
+						e.preventDefault();
+
+						$("input#txt2").focus();
+					}
+				})
+
+				$("input#txt1").keydown(function (e) {
+					if ((e.which == 38) || (e.which == 40)) {
+						e.preventDefault();
+
+						$("input#txt2").focus();
+					}
+				})
+
+				$("input#txt2").keydown(function (e) {
+					if ((e.which == 38) || (e.which == 40)) {
+						e.preventDefault();
+
+						$("input#txt1").focus();
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<form method="post" action="Learn01.htm">
+			<input type="text" id="txt1" />
+			<br />
+			<input type="text" id="txt2" />
+
+			<br />
+			<br />
+
+			<input type="submit" value="(S)ubmit" accesskey="S"/>
+		</form>
+	</body>
+</html>

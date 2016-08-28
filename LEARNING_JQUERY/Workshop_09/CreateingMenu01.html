@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title></title>
+
+		<script src="Scripts/jquery-1.8.3.min.js"></script>
+
+		<script>
+			$(function () {
+				var varDivSubMenu = $("<div id='subMenu'></div>");
+				varDivSubMenu.hide();
+				$("body").append(varDivSubMenu);
+
+				$("ul.navigation li ul").hide();
+
+				$("ul.navigation li:has(ul)").each(function () {
+					$(this).mouseenter(function () {
+						var varWidth = $(this).width();
+						var varHeight = $(this).height();
+
+						var varTop = $(this).offset().top;
+						var varLeft = $(this).offset().left;
+
+						var varDivSubMenuWidth = $(varDivSubMenu).width();
+
+						var varDivSubMenuTop = varTop + varHeight + 2;
+						var varDivSubMenuLeft = varLeft - (varDivSubMenuWidth - varWidth);
+
+						varDivSubMenu
+							.css("top", varDivSubMenuTop)
+							.css("left", varDivSubMenuLeft)
+						;
+
+						$(varDivSubMenu).text("");
+						$(varDivSubMenu).fadeIn(200);
+						$(varDivSubMenu).text("سلام");
+					})
+
+					$(this).mouseleave(function () {
+						$(varDivSubMenu).text("");
+						$(varDivSubMenu).fadeOut(100);
+					})
+				})
+			})
+		</script>
+
+		<style>
+			body {
+				direction: rtl;
+				text-align: justify;
+				font-size: 10pt;
+				font-family: Tahoma;
+			}
+
+			div.navigation {
+				height: 50px;
+				background-color: yellow;
+			}
+
+			div#subMenu {
+				width: 150px;
+				min-height: 50px;
+
+				top: 10px;
+				left: 10px;
+				position: absolute;
+
+				border: 1px solid white;
+				background-color: lightgray;
+			}
+
+			ul.navigation {
+				background-color: #e5e5e5;
+
+				/*فارسی*/
+				float: right;
+				/*انگليسی*/
+				/*float: left;*/
+
+				margin: 0;
+				padding: 0;
+				border: 1px solid white;
+			}
+
+				ul.navigation li, ul.navigation li a {
+					/*فارسی*/
+					float: right;
+					/*انگليسی*/
+					/*float: left;*/
+				}
+
+				ul.navigation li {
+					list-style: none;
+					position: relative;
+				}
+
+					ul.navigation li a {
+						margin: 0;
+						border: 1px solid white;
+						padding: 6px 4px 6px 4px;
+
+						width: 100px;
+						height: 20px;
+
+						position: relative;
+
+						color: white;
+						background: #292929;
+
+						text-decoration: none;
+					}
+
+						ul.navigation li a:hover {
+							color: black;
+							background: white;
+						}
+		</style>
+	</head>
+	<body>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+
+		<div class="navigation">
+			<ul class="navigation">
+				<li><a href="#">صفحه نخست</a></li>
+				<li>
+					<a href="#">درباره ما</a>
+					<ul>
+						<li><a href="#">شرکت‏ها</a></li>
+						<li><a href="#">موسسات</a></li>
+						<li><a href="#">سازمان‏ها</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">زيرمنوی دو</a>
+					<ul>
+						<li><a href="#">آيتم دو - يک</a></li>
+						<li><a href="#">آيتم دو - دو</a></li>
+						<li><a href="#">آيتم دو - سه</a></li>
+						<li><a href="#">آيتم دو - چهار</a></li>
+						<li><a href="#">آيتم دو - پنج</a></li>
+					</ul>
+				</li>
+				<li><a href="#">تماس با ما</a></li>
+				<li>
+					<a href="#">محصولات</a>
+					<ul>
+						<li><a href="#">کيف</a></li>
+						<li><a href="#">کفش</a></li>
+						<li><a href="#">مانتو</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+	</body>
+</html>

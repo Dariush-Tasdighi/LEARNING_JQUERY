@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		CSS Content
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			alert($('body').html());
+
+			// Solution (1)
+			// اگر کلاس مربوطه را داشت، حذف کن و اگر نداشت، کاری با آن نداشته باش
+			$('p').toggleClass('red', false);
+			// /Solution (1)
+
+			// Solution (2)
+			//$('p').removeClass('red');
+			// /Solution (2)
+
+			alert($('body').html());
+
+		});
+
+	</script>
+
+	<style>
+		.red {
+			color: red;
+			background-color: yellow;
+		}
+
+		.blue {
+			color: blue;
+			border: thin solid gray;
+		}
+
+		.green {
+			color: green;
+			border: thin solid gray;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		This is paragraph 1
+	</p>
+
+	<p class="blue">
+		This is paragraph 2
+	</p>
+
+	<p class="red">
+		This is paragraph 3
+	</p>
+
+	<p class="red green blue">
+		This is paragraph 4
+	</p>
+
+	<p class="green red blue">
+		This is paragraph 5
+	</p>
+
+	<p class="green blue red">
+		This is paragraph 6
+	</p>
+</body>
+</html>

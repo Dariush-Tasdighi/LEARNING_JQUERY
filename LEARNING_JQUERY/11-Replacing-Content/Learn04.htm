@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Replacing Content
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			alert($('body').html());
+
+			$('p').wrapAll('<div style="border: thin solid red; margin: 10px; padding: 10px;"></div>');
+
+			alert($('body').html());
+
+		});
+
+	</script>
+
+	<style>
+		.a {
+			color: Navy;
+		}
+
+		.b {
+			color: Maroon;
+		}
+	</style>
+</head>
+<body>
+	<h3>
+		Hello, World (1)
+	</h3>
+
+	<p class="a">
+		This is paragraph 1
+	</p>
+
+	<p class="b">
+		This is paragraph 2
+	</p>
+
+	<h3>
+		Hello, World (2)
+	</h3>
+
+	<div>
+		Hello, World (3)
+
+		<p class="a">
+			This is paragraph 3
+		</p>
+	</div>
+
+	<p class="b">
+		This is paragraph 4
+	</p>
+</body>
+</html>

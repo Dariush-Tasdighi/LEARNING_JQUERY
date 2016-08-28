@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Learning Filters
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$('document').ready(function () {
+
+			alert($(':checkbox').length);
+
+			$(':checkbox').css('border', 'thin solid red');
+
+			alert($('[type=checkbox]').length);
+
+			$('[type=checkbox]').css('border', 'thin solid red');
+
+		});
+
+	</script>
+</head>
+<body>
+	<form action="SomePage.aspx" method="post">
+		<div>
+			type="text"
+		</div>
+		<div>
+			<input type="text" id="txt1" />
+		</div>
+
+		<br />
+
+		<div>
+			accesskey="1"
+		</div>
+		<div>
+			<input type="text" id="txt2" accesskey="1" />
+		</div>
+
+		<br />
+
+		<div>
+			maxlength="20"
+		</div>
+		<div>
+			<input type="text" id="txt3" maxlength="20" />
+		</div>
+
+		<br />
+
+		<div>
+			value="Hello, World!"
+		</div>
+		<div>
+			<input type="text" id="txt4" value="Hello, World!" />
+		</div>
+
+		<br />
+
+		<div>
+			disabled="disabled"
+			&
+			value="Hello, World!"
+		</div>
+		<div>
+			<input type="text" id="txt5" value="Hello, World!" disabled="disabled" />
+		</div>
+
+		<br />
+
+		<div>
+			readonly="readonly"
+			&
+			value="Hello, World!"
+		</div>
+		<div>
+			<input type="text" id="txt6" value="Hello, World!" readonly="readonly" />
+		</div>
+
+		<br />
+
+		<div>
+			tabindex="0"
+		</div>
+		<div>
+			<input type="text" id="txt7" tabindex="0" />
+		</div>
+
+		<br />
+
+		<div>
+			tabindex="-1"
+		</div>
+		<div>
+			<input type="text" id="txt8" tabindex="-1" />
+		</div>
+
+		<hr />
+
+		<div>
+			textarea
+		</div>
+		<div>
+			<textarea id="txt99"></textarea>
+		</div>
+
+		<div>
+			textarea & rows="4" & cols="60"
+		</div>
+		<div>
+			<textarea id="txt9" rows="4" cols="60"></textarea>
+		</div>
+
+		<br />
+
+		<div>
+			textarea & rows="4" & cols="60" & disabled="disabled"
+		</div>
+		<div>
+			<textarea id="txt10" rows="4" cols="60" disabled="disabled"></textarea>
+		</div>
+
+		<br />
+
+		<div>
+			textarea & rows="4" & cols="60" & readonly="readonly"
+		</div>
+		<div>
+			<textarea id="txt11" rows="4" cols="60" readonly="readonly"></textarea>
+		</div>
+
+		<br />
+
+		<div>
+			textarea & rows="4" & cols="60" & Hello, World!
+		</div>
+		<div>
+			<textarea id="txt12" rows="4" cols="60">Hello, World!</textarea>
+		</div>
+
+		<hr />
+
+		<div>
+			type="password"
+		</div>
+		<div>
+			<input type="password" id="txtPassword" />
+		</div>
+
+		<hr />
+
+		<div>
+			type="checkbox"
+		</div>
+		<div>
+			<input type="checkbox" id="chk1" />
+		</div>
+
+		<br />
+
+		<div>
+			checked="checked"
+		</div>
+		<div>
+			<input type="checkbox" id="chk2" checked="checked" />
+		</div>
+
+		<br />
+
+		<div>
+			disabled="disabled"
+		</div>
+		<div>
+			<input id="chk3" type="checkbox" disabled="disabled" />
+		</div>
+
+		<br />
+
+		<div>
+			value="110"
+			معمولا:
+			1, 0
+			true, false
+		</div>
+		<div>
+			<input type="checkbox" id="chk4" value="110" />
+		</div>
+
+		<hr />
+
+		<div>
+			type="radio"
+		</div>
+		<div>
+			<input type="radio" id="opt1" />
+		</div>
+
+		<br />
+
+		<div>
+			checked="checked"
+		</div>
+		<div>
+			<input type="radio" id="opt2" checked="checked" />
+		</div>
+
+		<br />
+
+		<div>
+			disabled="disabled"
+		</div>
+		<div>
+			<input type="radio" id="opt3" disabled="disabled" />
+		</div>
+
+		<br />
+
+		<div>
+			value="110"
+		</div>
+		<div>
+			<input type="radio" id="opt4" value="110" />
+		</div>
+
+		<br />
+
+		<div>
+			name="myOption"
+		</div>
+		<div>
+			<input type="radio" id="opt5" name="myOption" />
+			<input type="radio" id="opt6" name="myOption" />
+			<input type="radio" id="opt7" name="myOption" />
+			<input type="radio" id="opt8" name="myOption" />
+			<input type="radio" id="opt9" name="myOption" />
+		</div>
+
+		<br />
+
+		<div>
+			Marriage Status
+		</div>
+		<div>
+			<input type="radio" id="single" name="marriageStatus" />
+			Single
+			<br />
+			<input type="radio" id="married" name="marriageStatus" />
+			Married
+		</div>
+
+		<hr />
+
+		<div>
+			type="file"
+		</div>
+		<div>
+			<input type="file" id="fil1" />
+		</div>
+
+		<hr />
+
+		<div>
+			select
+		</div>
+		<div>
+			<select id="cbo1">
+				<option>Option 1</option>
+				<option>Option 2</option>
+				<option>Option 3</option>
+				<option>Option 4</option>
+				<option>Option 5</option>
+			</select>
+		</div>
+
+		<br />
+
+		<div>
+			value="1"
+		</div>
+		<div>
+			<select id="cbo2">
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+			</select>
+		</div>
+
+		<br />
+
+		<div>
+			value="3" & selected="selected"
+		</div>
+		<div>
+			<select id="cbo3">
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3" selected="selected">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+			</select>
+		</div>
+
+		<br />
+
+		<div>
+			value="3" & disabled="disabled"
+		</div>
+		<div>
+			<select id="cbo4">
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3" disabled="disabled">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+			</select>
+		</div>
+
+		<br />
+
+		<div>
+			select & disabled="disabled"
+		</div>
+		<div>
+			<select id="cbo5" disabled="disabled">
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+			</select>
+		</div>
+
+		<br />
+
+		<div>
+			select & multiple="multiple"
+		</div>
+		<div>
+			<select id="lst1" multiple="multiple">
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+			</select>
+		</div>
+
+		<br />
+
+		<div>
+			select & multiple="multiple" & size="2"
+		</div>
+		<div>
+			<select id="lst2" multiple="multiple" size="2">
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+			</select>
+		</div>
+
+		<br />
+
+		<div>
+			select & multiple="multiple" & disabled="disabled"
+		</div>
+		<div>
+			<select id="lst3" multiple="multiple" disabled="disabled">
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+			</select>
+		</div>
+
+		<hr />
+
+		<div>
+			type="reset"
+		</div>
+		<div>
+			<input type="reset" />
+		</div>
+
+		<br />
+
+		<div>
+			type="reset" & disabled="disabled"
+		</div>
+		<div>
+			<input type="reset" disabled="disabled" />
+		</div>
+
+		<br />
+
+		<div>
+			type="reset" & value="(R)eset"
+		</div>
+		<div>
+			<input type="reset" value="(R)eset" />
+		</div>
+
+		<hr />
+
+		<div>
+			type="submit"
+		</div>
+		<div>
+			<input type="submit" />
+		</div>
+
+		<br />
+
+		<div>
+			type="submit" & disabled="disabled"
+		</div>
+		<div>
+			<input type="submit" disabled="disabled" />
+		</div>
+
+		<br />
+
+		<div>
+			type="submit" & value="(S)ubmit"
+		</div>
+		<div>
+			<input type="submit" value="(S)ubmit" />
+		</div>
+
+		<hr />
+
+		<div>
+			type="button"
+		</div>
+		<div>
+			<input type="button" />
+		</div>
+
+		<br />
+
+		<div>
+			type="button" & disabled="disabled"
+		</div>
+		<div>
+			<input type="button" disabled="disabled" />
+		</div>
+
+		<br />
+
+		<div>
+			type="button" & value="(M)y Button"
+		</div>
+		<div>
+			<input type="button" value="(M)y Button" />
+		</div>
+	</form>
+</body>
+</html>
+

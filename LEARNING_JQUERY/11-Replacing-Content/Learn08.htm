@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>
+		Replacing Content
+	</title>
+
+	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+
+			//var myUnorderedList = $('ul#list1');
+
+			var myUnorderedList = $('ul#list1').clone();
+
+			// خيلی به درد نمی خورد
+			alert($(myUnorderedList).html());
+
+			$(myUnorderedList).attr('id', 'list2');
+
+			// خيلی به درد نمی خورد
+			alert($(myUnorderedList).html());
+
+		});
+
+	</script>
+
+	<style>
+		.a {
+			color: Navy;
+		}
+
+		.b {
+			color: Maroon;
+		}
+	</style>
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">
+			Item 1
+		</li>
+		<li class="b">
+			Item 2
+		</li>
+		<li class="a">
+			Item 3
+		</li>
+		<li class="b">
+			Item 4
+		</li>
+	</ul>
+</body>
+</html>

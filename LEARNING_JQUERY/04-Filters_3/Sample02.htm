@@ -6,19 +6,19 @@
 		Learning Filters
 	</title>
 
-	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+	<script src="../Scripts/jquery-3.1.1.min.js"></script>
 
 	<script>
 
 		$(document).ready(function () {
 
 			// Old with BUG!
-			//$('table.data tr:odd').css('background-color', '#CCCCCC');
-			//$('table.data tr:even').css('background-color', '#FFFF99');
+			//$('table.data tr:odd').css('background-color', '#cccccc');
+			//$('table.data tr:even').css('background-color', '#ffff99');
 
 			// New without BUG!
-			$('table.data tr:nth-child(odd)').css('background-color', '#CCCCCC');
-			$('table.data tr:nth-child(even)').css('background-color', '#FFFF99');
+			$('table.data tr:nth-child(odd)').css('background-color', '#cccccc');
+			$('table.data tr:nth-child(even)').css('background-color', '#ffff99');
 
 		});
 

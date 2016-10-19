@@ -6,19 +6,19 @@
 		Manipulating Attributes
 	</title>
 
-	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+	<script src="../Scripts/jquery-3.1.1.min.js"></script>
 
 	<script>
 
 		$(document).ready(function () {
 
 			var strFullName =
-				$('input#txtFullName').val();
+				$('input#fullName').val();
 
 			alert(strFullName);
 
 			var strDescription =
-				$('textarea#txtDescription').val();
+				$('textarea#description').val();
 
 			alert(strDescription);
 
@@ -30,8 +30,8 @@
 	</style>
 </head>
 <body>
-	<input id="txtFullName" type="text" value="Hello, World! (1)!" />
+	<input id="fullName" type="text" value="Hello, World! (1)!" />
 	<br />
-	<textarea id="txtDescription" rows="10" cols="60">Hello, World! (2)!</textarea>
+	<textarea id="description" rows="10" cols="60">Hello, World! (2)!</textarea>
 </body>
 </html>

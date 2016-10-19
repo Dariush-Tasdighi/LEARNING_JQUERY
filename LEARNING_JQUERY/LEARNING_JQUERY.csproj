@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="04-Filters_3\Sample01.htm" />
+    <Content Include="10-Inserting_Content\Learn06_Extra.htm" />
     <Content Include="21-Downloaded-Custom-JQueryUI\jquery-ui-1.10.3.custom.zip" />
     <Content Include="24-My-Students-Samples\FACEBOOK_PAGE_SAMPLE_1391_04_11_VERSION_1.0.0.rar" />
     <Content Include="App_Data\Documents\DT Learning jQuery.xps" />

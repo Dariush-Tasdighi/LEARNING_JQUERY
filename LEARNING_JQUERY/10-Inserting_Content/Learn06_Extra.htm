@@ -12,11 +12,11 @@
 
 		$(document).ready(function () {
 
-			alert($('body').html());
+			$('button#moveButton').click(function () {
 
-			$('p:last').prependTo('div.data');
+				$('p:last').prependTo('div.data');
 
-			alert($('body').html());
+			});
 
 		});
 
@@ -24,11 +24,21 @@
 
 	<style>
 		div.data {
+			color: red;
 			background-color: Yellow;
 		}
+
+			div.data p {
+				margin: 8px;
+				border: 1px solid black;
+			}
 	</style>
 </head>
 <body>
+	<button id="moveButton" type="button">Move</button>
+
+	<hr />
+
 	<div class="data">
 		<p>
 			This is paragraph 1
@@ -44,6 +54,26 @@
 
 		<p>
 			This is paragraph 4
+		</p>
+
+		<p>
+			This is paragraph 5
+		</p>
+
+		<p>
+			This is paragraph 6
+		</p>
+
+		<p>
+			This is paragraph 7
+		</p>
+
+		<p>
+			This is paragraph 8
+		</p>
+
+		<p>
+			This is paragraph 9
 		</p>
 	</div>
 </body>

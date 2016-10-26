@@ -6,7 +6,7 @@
 		Event Helper Functions
 	</title>
 
-	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+	<script src="../Scripts/jquery-3.1.1.min.js"></script>
 
 	<script>
 
@@ -14,13 +14,13 @@
 
 			$('div.fullName').hover(toggleHighlight, toggleHighlight);
 
-			$('input#btnSubmit').click(function (e) {
+			$('button#submit').click(function (e) {
 
-				var strLastName = $('input#txtLastName').val();
-				var strFirstName = $('input#txtFirstName').val();
+				var strLastName = $('input#lastName').val();
+				var strFirstName = $('input#firstName').val();
 
-				$('input#txtLastName').val('');
-				$('input#txtFirstName').val('');
+				$('input#lastName').val('');
+				$('input#firstName').val('');
 
 				var varFullName = $('<div class="fullName"></div>');
 
@@ -47,7 +47,7 @@
 
 	</script>
 
-	<style type='text/css'>
+	<style>
 		legend {
 		}
 
@@ -95,17 +95,17 @@
 		<div class="field">
 			First Name
 			<br />
-			<input type="text" id="txtFirstName" />
+			<input type="text" id="firstName" />
 		</div>
 
 		<div class="field">
 			Last Name
 			<br />
-			<input type="text" id="txtLastName" />
+			<input type="text" id="lastName" />
 		</div>
 
 		<div class="buttons">
-			<input type="button" id="btnSubmit" value="(I)nsert" accesskey="I" />
+			<button type="button" id="submit" accesskey="I">(I)nsert</button>
 		</div>
 	</fieldset>
 

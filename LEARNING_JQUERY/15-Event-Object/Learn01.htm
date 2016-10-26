@@ -6,13 +6,13 @@
 		Event-Object
 	</title>
 
-	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+	<script src="../Scripts/jquery-3.1.1.min.js"></script>
 
 	<script>
 
 		$(function () {
 
-			$('*.normal').click(function (e) {
+			$('div.normal').click(function (e) {
 
 				$(this).html('pageX: ' + e.pageX +
 							', pageY: ' + e.pageY +
@@ -25,15 +25,15 @@
 
 	</script>
 
-	<style type='text/css'>
-		*.normal {
+	<style>
+		div.normal {
 			width: 400px;
 			height: 100px;
 			margin: 10px;
 			padding: 10px;
 			font-size: 18pt;
-			color: Black;
-			background-color: #CCCCCC;
+			color: black;
+			background-color: #cccccc;
 		}
 	</style>
 </head>
@@ -42,17 +42,16 @@
 		Click On Me!
 	</div>
 
-	<p class="normal">
+	<div class="normal">
 		Click On Me!
-	</p>
+	</div>
 
 	<div class="normal">
 		Click On Me!
 	</div>
 
-	<p class="normal">
+	<div class="normal">
 		Click On Me!
-	</p>
+	</div>
 </body>
 </html>
-

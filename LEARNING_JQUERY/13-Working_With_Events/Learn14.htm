@@ -6,7 +6,7 @@
 		Binding and Unbinding Events with jQuery
 	</title>
 
-	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+	<script src="../Scripts/jquery-3.1.1.min.js"></script>
 
 	<script>
 
@@ -31,14 +31,14 @@
 
 		function disableHighlighting(e) {
 
-			$(this).addClass('disabled');
 			$(this).unbind('mouseenter mouseleave', toggleHighlight);
+			$(this).addClass('disabled');
 
 		}
 
 	</script>
 
-	<style type='text/css'>
+	<style>
 		tr.odd {
 			background-color: khaki;
 		}
@@ -121,4 +121,3 @@
 	</table>
 </body>
 </html>
-

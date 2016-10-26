@@ -6,7 +6,7 @@
 		Event Helper Functions
 	</title>
 
-	<script src="../Scripts/jquery-2.2.1.min.js"></script>
+	<script src="../Scripts/jquery-3.1.1.min.js"></script>
 
 	<script>
 
@@ -21,20 +21,28 @@
 			// /Solution (2)
 
 			// Solution (3)
-			$('div#eventTarget').click(someFunction);
+			//$('div#eventTarget').click(someFunction);
 			// /Solution (3)
+
+			// Solution (4)
+			$('div#eventTarget').click(function (e) {
+
+				alert('Hello, World!');
+
+			});
+			// /Solution (4)
 
 		})
 
-		function someFunction(e) {
+		//function someFunction(e) {
 
-			alert('Hello, World!');
+		//	alert('Hello, World!');
 
-		}
+		//}
 
 	</script>
 
-	<style type='text/css'>
+	<style>
 		body {
 			font-size: 12pt;
 		}
